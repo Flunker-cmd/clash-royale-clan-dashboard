@@ -822,7 +822,7 @@
       }
     },
     "3": {
-      "updated": "2026-10-31T13:58:42Z",
+      "updated": "2026-10-31T18:10:20Z",
       "players": {
         "#UG0LPCL": {
           "name": "FC GUNNER",
@@ -1019,35 +1019,25 @@
           "base": 4,
           "decks": 0
         },
-        "#YGPJ9PP9Y": {
-          "name": "kingmeng",
-          "base": 4,
-          "decks": 0
-        },
-        "#20929PYR0": {
-          "name": "Reavy",
-          "base": 3,
-          "decks": 3
-        },
         "#29YR2U0VP": {
           "name": "RONALD + RONALD",
           "base": 5,
           "decks": 0
         },
-        "#VCYPG98JG": {
-          "name": "OGDUNEDAN",
-          "base": 8,
-          "decks": 0
-        },
-        "#2JRJY2LQR": {
-          "name": "skogsankan",
-          "base": 8,
-          "decks": 0
+        "#20929PYR0": {
+          "name": "Reavy",
+          "base": 3,
+          "decks": 4
         },
         "#8UPLQ90YQ": {
           "name": "Viggen\\\\",
           "base": 8,
           "decks": 0
+        },
+        "#VCYPG98JG": {
+          "name": "OGDUNEDAN",
+          "base": 8,
+          "decks": 1
         },
         "#2QL8VQRUP": {
           "name": "The Viking",
@@ -1064,13 +1054,13 @@
           "base": 8,
           "decks": 0
         },
+        "#YGPJ9PP9Y": {
+          "name": "kingmeng",
+          "base": 4,
+          "decks": 4
+        },
         "#UCCL9GC9R": {
           "name": "Das Meer",
-          "base": 8,
-          "decks": 0
-        },
-        "#UUGUL0JJR": {
-          "name": "Padlarn",
           "base": 8,
           "decks": 0
         },
@@ -1084,30 +1074,20 @@
           "base": 8,
           "decks": 0
         },
-        "#U2YJV2R2G": {
-          "name": "Hejhadi1",
-          "base": 8,
-          "decks": 0
-        },
         "#CJLPGJ2CY": {
           "name": "BRUNO",
           "base": 6,
           "decks": 4
         },
-        "#CVYL9CR92": {
-          "name": "A19",
-          "base": 8,
-          "decks": 0
-        },
-        "#CC0JPP0UL": {
-          "name": "slinky",
-          "base": 8,
-          "decks": 0
-        },
         "#GYJVQYR": {
           "name": "Adam",
           "base": 8,
           "decks": 0
+        },
+        "#2JRJY2LQR": {
+          "name": "skogsankan",
+          "base": 8,
+          "decks": 4
         },
         "#PPJPY09GP": {
           "name": "BjalkenGG",
@@ -1144,15 +1124,25 @@
           "base": 8,
           "decks": 0
         },
-        "#98YUVC8": {
-          "name": "Oskar :)",
+        "#UUGUL0JJR": {
+          "name": "Padlarn",
           "base": 8,
-          "decks": 0
+          "decks": 4
         },
         "#8CVLPV9YR": {
           "name": "Piggelin",
           "base": 8,
           "decks": 0
+        },
+        "#CC0JPP0UL": {
+          "name": "slinky",
+          "base": 8,
+          "decks": 4
+        },
+        "#U2YJV2R2G": {
+          "name": "Hejhadi1",
+          "base": 8,
+          "decks": 3
         },
         "#CQCUPGGG": {
           "name": "Bjögga",
@@ -1163,16 +1153,6 @@
           "name": "Julia",
           "base": 8,
           "decks": 4
-        },
-        "#V882JC088": {
-          "name": "Teddaren",
-          "base": 8,
-          "decks": 3
-        },
-        "#URUQ09LVG": {
-          "name": "wisely",
-          "base": 8,
-          "decks": 3
         },
         "#2QGGPPYCP": {
           "name": "herman@:com",
@@ -1186,6 +1166,16 @@
         },
         "#YPCURPPY2": {
           "name": "BullyMeILLc|_|M",
+          "base": 8,
+          "decks": 4
+        },
+        "#URUQ09LVG": {
+          "name": "wisely",
+          "base": 8,
+          "decks": 4
+        },
+        "#CVYL9CR92": {
+          "name": "A19",
           "base": 8,
           "decks": 4
         },
@@ -1204,6 +1194,11 @@
           "base": 8,
           "decks": 4
         },
+        "#V882JC088": {
+          "name": "Teddaren",
+          "base": 8,
+          "decks": 4
+        },
         "#VJ9GP8UJ8": {
           "name": "amj",
           "base": 8,
@@ -1216,6 +1211,11 @@
         },
         "#P2VVLPGUJ": {
           "name": "Gabro",
+          "base": 8,
+          "decks": 4
+        },
+        "#98YUVC8": {
+          "name": "Oskar :)",
           "base": 8,
           "decks": 4
         },

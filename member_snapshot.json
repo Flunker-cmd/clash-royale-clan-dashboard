@@ -1,4 +1,36 @@
 {
+  "#P0CV8LUY": {
+    "name": "Gideon",
+    "role": "elder"
+  },
+  "#PPUUULVU2": {
+    "name": "Julia",
+    "role": "elder"
+  },
+  "#2L8V08QLL": {
+    "name": "Bossebus123",
+    "role": "elder"
+  },
+  "#98YUVC8": {
+    "name": "Oskar :)",
+    "role": "elder"
+  },
+  "#8VV8GGGPY": {
+    "name": "Leo",
+    "role": "elder"
+  },
+  "#RUV8V8GVR": {
+    "name": "MEGABAENIS",
+    "role": "elder"
+  },
+  "#VGPYCR0JG": {
+    "name": "Rasse08;)",
+    "role": "elder"
+  },
+  "#U2YJV2R2G": {
+    "name": "Hejhadi1",
+    "role": "member"
+  },
   "#G0JQ08299": {
     "name": "Tren 9",
     "role": "member"
@@ -11,48 +43,16 @@
     "name": "WilliR5",
     "role": "elder"
   },
-  "#8VV8GGGPY": {
-    "name": "Leo",
-    "role": "elder"
-  },
   "#PJCJ929Q2": {
     "name": "mastercheese",
     "role": "member"
-  },
-  "#2L8V08QLL": {
-    "name": "Bossebus123",
-    "role": "elder"
   },
   "#2QGGPPYCP": {
     "name": "herman@:com",
     "role": "elder"
   },
-  "#U2YJV2R2G": {
-    "name": "Hejhadi1",
-    "role": "member"
-  },
   "#8UPLQ90YQ": {
     "name": "Viggen\\\\",
-    "role": "elder"
-  },
-  "#P0CV8LUY": {
-    "name": "Gideon",
-    "role": "elder"
-  },
-  "#PPUUULVU2": {
-    "name": "Julia",
-    "role": "elder"
-  },
-  "#VGPYCR0JG": {
-    "name": "Rasse08;)",
-    "role": "elder"
-  },
-  "#98YUVC8": {
-    "name": "Oskar :)",
-    "role": "elder"
-  },
-  "#RUV8V8GVR": {
-    "name": "MEGABAENIS",
     "role": "elder"
   },
   "#9PQPP2GVG": {
@@ -83,12 +83,12 @@
     "name": "amj",
     "role": "elder"
   },
-  "#8CVLPV9YR": {
-    "name": "Piggelin",
-    "role": "elder"
-  },
   "#YGPJ9PP9Y": {
     "name": "kingmeng",
+    "role": "elder"
+  },
+  "#8CVLPV9YR": {
+    "name": "Piggelin",
     "role": "elder"
   },
   "#URUQ09LVG": {
@@ -139,10 +139,6 @@
     "name": "iron m",
     "role": "elder"
   },
-  "#CUUUYP0LG": {
-    "name": "561an",
-    "role": "member"
-  },
   "#J2R9RRRG": {
     "name": "N3lson",
     "role": "leader"
@@ -155,12 +151,12 @@
     "name": "The Viking",
     "role": "member"
   },
-  "#CVGCRRCR2": {
-    "name": "Nnea",
-    "role": "elder"
-  },
   "#20U2C9QLGG": {
     "name": "Wader",
+    "role": "elder"
+  },
+  "#CVGCRRCR2": {
+    "name": "Nnea",
     "role": "elder"
   },
   "#2JRJY2LQR": {

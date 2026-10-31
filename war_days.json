@@ -822,7 +822,7 @@
       }
     },
     "3": {
-      "updated": "2026-10-31T18:10:20Z",
+      "updated": "2026-10-31T22:00:19Z",
       "players": {
         "#UG0LPCL": {
           "name": "FC GUNNER",
@@ -1034,23 +1034,8 @@
           "base": 8,
           "decks": 0
         },
-        "#VCYPG98JG": {
-          "name": "OGDUNEDAN",
-          "base": 8,
-          "decks": 1
-        },
         "#2QL8VQRUP": {
           "name": "The Viking",
-          "base": 8,
-          "decks": 0
-        },
-        "#2L8V08QLL": {
-          "name": "Bossebus123",
-          "base": 8,
-          "decks": 0
-        },
-        "#2JC8C9VVP": {
-          "name": "iron m",
           "base": 8,
           "decks": 0
         },
@@ -1059,18 +1044,8 @@
           "base": 4,
           "decks": 4
         },
-        "#UCCL9GC9R": {
-          "name": "Das Meer",
-          "base": 8,
-          "decks": 0
-        },
         "#UVJU8Q90V": {
           "name": "WilliR5",
-          "base": 8,
-          "decks": 0
-        },
-        "#PRVR9J9": {
-          "name": "Limpan",
           "base": 8,
           "decks": 0
         },
@@ -1079,20 +1054,15 @@
           "base": 6,
           "decks": 4
         },
-        "#GYJVQYR": {
-          "name": "Adam",
+        "#VCYPG98JG": {
+          "name": "OGDUNEDAN",
           "base": 8,
-          "decks": 0
+          "decks": 4
         },
         "#2JRJY2LQR": {
           "name": "skogsankan",
           "base": 8,
           "decks": 4
-        },
-        "#PPJPY09GP": {
-          "name": "BjalkenGG",
-          "base": 8,
-          "decks": 0
         },
         "#P0CV8LUY": {
           "name": "Gideon",
@@ -1109,23 +1079,28 @@
           "base": 8,
           "decks": 0
         },
-        "#RUV8V8GVR": {
-          "name": "MEGABAENIS",
-          "base": 8,
-          "decks": 0
-        },
-        "#J2R9RRRG": {
-          "name": "N3lson",
-          "base": 8,
-          "decks": 0
-        },
         "#2G9PV0LQ0": {
           "name": "Thabet",
           "base": 8,
           "decks": 0
         },
+        "#GYJVQYR": {
+          "name": "Adam",
+          "base": 8,
+          "decks": 1
+        },
         "#UUGUL0JJR": {
           "name": "Padlarn",
+          "base": 8,
+          "decks": 4
+        },
+        "#PRVR9J9": {
+          "name": "Limpan",
+          "base": 8,
+          "decks": 3
+        },
+        "#2L8V08QLL": {
+          "name": "Bossebus123",
           "base": 8,
           "decks": 4
         },
@@ -1133,6 +1108,16 @@
           "name": "Piggelin",
           "base": 8,
           "decks": 0
+        },
+        "#UCCL9GC9R": {
+          "name": "Das Meer",
+          "base": 8,
+          "decks": 4
+        },
+        "#2JC8C9VVP": {
+          "name": "iron m",
+          "base": 8,
+          "decks": 4
         },
         "#CC0JPP0UL": {
           "name": "slinky",
@@ -1154,6 +1139,11 @@
           "base": 8,
           "decks": 4
         },
+        "#RUV8V8GVR": {
+          "name": "MEGABAENIS",
+          "base": 8,
+          "decks": 4
+        },
         "#2QGGPPYCP": {
           "name": "herman@:com",
           "base": 8,
@@ -1162,6 +1152,11 @@
         "#PJCJ929Q2": {
           "name": "mastercheese",
           "base": 7,
+          "decks": 4
+        },
+        "#J2R9RRRG": {
+          "name": "N3lson",
+          "base": 8,
           "decks": 4
         },
         "#YPCURPPY2": {
@@ -1196,6 +1191,11 @@
         },
         "#V882JC088": {
           "name": "Teddaren",
+          "base": 8,
+          "decks": 4
+        },
+        "#PPJPY09GP": {
+          "name": "BjalkenGG",
           "base": 8,
           "decks": 4
         },

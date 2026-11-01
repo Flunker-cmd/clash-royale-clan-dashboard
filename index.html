@@ -1657,7 +1657,7 @@
 
       const warning = down.find(c => c.warn);
       if (warning) {
-        return { text: isElder ? 'Varning' : 'Håll koll', weight: 2, className: 'warn', reason: `${warning.label} ${warning.value} ${warning.op} ${warning.limit}${warning.suffix}` };
+        return { text: 'Håll koll', weight: 2, className: 'warn', reason: `${warning.label} ${warning.value} ${warning.op} ${warning.limit}${warning.suffix}` };
       }
 
       if (recent.hit) {
@@ -3447,7 +3447,7 @@
         enabled: c.enabled,
         rule: `${action} om ${c.label.toLowerCase()} ${c.ruleOp} ${c.limit}${c.ruleSuffix}`,
         value: c.value,
-        outcome: !c.enabled ? '– Av' : (c.hit ? '⚠ Slår till' : (c.warn ? `⚠ ${isElder ? 'Varning' : 'Håll koll'}${c.suffix}` : '✓ Slår inte till'))
+        outcome: !c.enabled ? '– Av' : (c.hit ? '⚠ Slår till' : (c.warn ? `⚠ Håll koll${c.suffix}` : '✓ Slår inte till'))
       }));
       rows.push({
         enabled: recent.enabled,

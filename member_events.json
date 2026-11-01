@@ -2,6 +2,21 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-01T10:59:39Z",
+      "type": "demoted",
+      "tag": "#YGPJ9PP9Y",
+      "name": "kingmeng",
+      "from": "elder",
+      "to": "member"
+    },
+    {
+      "date": "2026-11-01T10:59:39Z",
+      "type": "left",
+      "tag": "#RYY092PLU",
+      "name": "bagge",
+      "role": "member"
+    },
+    {
       "date": "2026-10-31T22:00:19Z",
       "type": "left",
       "tag": "#CUUUYP0LG",

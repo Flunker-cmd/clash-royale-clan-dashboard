@@ -18,8 +18,13 @@ One war runs Thursday to Sunday, and a full war is all 16 decks used.
   finished wars count can be changed in the dashboard (default 1). Between wars
   and on the first war day this is just the latest finished war (fewer than 12
   of 16). Kick and demotion count decks only; fame does not matter.
+- Below 50% in that window the kick is severe (red) and always shown. From 50%
+  it is doubtful (orange) and only shown when the clan has at least 48 members;
+  with free places, or when the player used at least 85% of their decks over the
+  last 10 wars, it becomes "Håll koll" (yellow) instead.
 - Elder who missed decks in each of the **2 latest wars**: demote to Member
-  (Elder works as an extra life). The war in progress counts as one of them as
+  (Elder works as an extra life). Red below 50% in the window, otherwise orange;
+  free places do not matter here, as a demotion frees none. The war in progress counts as one of them as
   soon as decks are missed on a finished day; with no decks missed yet it neither
   counts nor breaks the streak. One such war gives a warning. A war the player
   was not in the clan for does not count as weak.

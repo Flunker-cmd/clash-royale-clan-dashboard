@@ -345,8 +345,8 @@
 
     .promote { background: #065f46; color: #34d399; }
     .good { background: #1e3a8a; color: #93c5fd; }
-    .review { background: #78350f; color: #fde047; }
-    .kick { background: #831843; color: #f472b6; }
+    .review { background: #7c2d12; color: #fdba74; }
+    .kick { background: #7f1d1d; color: #fca5a5; }
     .warn { background: transparent; color: #fde047; box-shadow: inset 0 0 0 1px #a16207; }
     
     .fame-cell {
@@ -1206,6 +1206,24 @@
             </div>
             <div class="criteria-field">
               <div class="criteria-field-header">
+                <label class="criteria-toggle" for="criteria-kickHistoryShare">Skyddas om % av decks senaste 10 krigen minst</label>
+              </div>
+              <input id="criteria-kickHistoryShare" type="number" min="0" max="100" step="5" value="85">
+            </div>
+            <div class="criteria-field">
+              <div class="criteria-field-header">
+                <label class="criteria-toggle" for="criteria-severeDeckShare">Allvarligt (röd) om % av möjliga decks under</label>
+              </div>
+              <input id="criteria-severeDeckShare" type="number" min="0" max="100" step="5" value="50">
+            </div>
+            <div class="criteria-field">
+              <div class="criteria-field-header">
+                <label class="criteria-toggle" for="criteria-kickClanSize">Tveksamma kick först vid antal medlemmar</label>
+              </div>
+              <input id="criteria-kickClanSize" type="number" min="1" max="50" step="1" value="48">
+            </div>
+            <div class="criteria-field">
+              <div class="criteria-field-header">
                 <label class="criteria-toggle"><input id="criteria-demoteElderMissedDecksEnabled" type="checkbox"> Degradera elder, missade decks fler än</label>
               </div>
               <input id="criteria-demoteElderMissedDecks" type="number" min="0" max="16" step="1" value="0">
@@ -1351,6 +1369,9 @@
       kickMemberDeckShare: 75,
       kickMemberDeckShareEnabled: true,
       deckWindowWars: 1,
+      kickHistoryShare: 85,
+      severeDeckShare: 50,
+      kickClanSize: 48,
       promoteElderFullWars: 3,
       promoteElderFullWarsEnabled: true,
       demoteElderMissedDecks: 0,
@@ -1407,6 +1428,9 @@
         kickMemberDeckShare: Number(document.getElementById('criteria-kickMemberDeckShare').value || defaultCriteria.kickMemberDeckShare),
         kickMemberDeckShareEnabled: document.getElementById('criteria-kickMemberDeckShareEnabled').checked,
         deckWindowWars: Number(document.getElementById('criteria-deckWindowWars').value || defaultCriteria.deckWindowWars),
+        kickHistoryShare: Number(document.getElementById('criteria-kickHistoryShare').value || defaultCriteria.kickHistoryShare),
+        severeDeckShare: Number(document.getElementById('criteria-severeDeckShare').value || defaultCriteria.severeDeckShare),
+        kickClanSize: Number(document.getElementById('criteria-kickClanSize').value || defaultCriteria.kickClanSize),
         promoteElderFullWars: Number(document.getElementById('criteria-promoteElderFullWars').value || defaultCriteria.promoteElderFullWars),
         promoteElderFullWarsEnabled: document.getElementById('criteria-promoteElderFullWarsEnabled').checked,
         demoteElderMissedDecks: Number(document.getElementById('criteria-demoteElderMissedDecks').value || defaultCriteria.demoteElderMissedDecks),
@@ -1429,6 +1453,8 @@
       const toggles = [
         ['criteria-kickMemberDeckShareEnabled', 'criteria-kickMemberDeckShare'],
         ['criteria-kickMemberDeckShareEnabled', 'criteria-deckWindowWars'],
+        ['criteria-kickMemberDeckShareEnabled', 'criteria-kickHistoryShare'],
+        ['criteria-kickMemberDeckShareEnabled', 'criteria-kickClanSize'],
         ['criteria-promoteElderFullWarsEnabled', 'criteria-promoteElderFullWars'],
         ['criteria-demoteElderMissedDecksEnabled', 'criteria-demoteElderMissedDecks'],
         ['criteria-demoteElderMissedDecksEnabled', 'criteria-demoteElderWeakWars'],
@@ -1524,6 +1550,8 @@
     // One set of checks feeds both the recommendation and the detail view's explanation.
     // Kick/demote criteria trigger on ANY enabled hit; promotion needs ALL enabled criteria met.
     // An elder's missed-decks check only hits after several weak wars in a row and warns before that.
+    // A hit is either severe (red) or doubtful (orange). A member's doubtful hit only warns while the long
+    // record protects them or the clan has free places, since a kick then gains nothing.
     function getCriteriaChecks(member, criteria) {
       const isElder = member.role === 'elder';
       const deckWindow = getDeckWindow(member, Number(criteria.deckWindowWars));
@@ -1553,6 +1581,7 @@
       }));
 
       const missed = down[0];
+      missed.severe = missed.hit && deckWindow.share < Number(criteria.severeDeckShare);
       const details = [`${deckWindow.played} av ${deckWindow.possible} möjliga decks`];
       if (member.livePossibleDecks > 0) details.push('inkl. pågående krig');
       if (member.latestWarPossibleDecks < 16) details.push('gick med under kriget');
@@ -1562,9 +1591,26 @@
         const liveWeak = member.livePossibleDecks - member.liveDecks > missed.limit;
         const streak = (liveWeak ? 1 : 0) + getWeakWarStreak(member.history || [], member.latestWarPossibleDecks, missed.limit);
         missed.hit = missed.enabled && streak >= needed;
+        missed.severe = missed.hit && deckWindow.share < Number(criteria.severeDeckShare);
         missed.warn = missed.enabled && streak > 0 && !missed.hit;
         details.push(`${Math.min(streak, needed)} av ${needed} krig i rad`);
         missed.ruleSuffix = ` i ${needed} krig i rad`;
+      } else {
+        const longShare = getDeckWindow(member, member.warPossibleDecks.length).share;
+        if (missed.hit && !missed.severe && longShare >= Number(criteria.kickHistoryShare)) {
+          missed.hit = false;
+          missed.warn = true;
+          details.push(`skyddas av historiken, ${longShare} % senaste 10 krigen`);
+        }
+        const spare = 'klanen har lediga platser';
+        if (member.memberCount < Number(criteria.kickClanSize)) {
+          down.filter(c => c.hit && !c.severe).forEach(c => {
+            c.hit = false;
+            c.warn = true;
+            if (c === missed) details.push(spare);
+            else c.suffix = ` (${spare})`;
+          });
+        }
       }
       missed.suffix = ` (${details.join(', ')})`;
 
@@ -1597,16 +1643,21 @@
 
       const { isElder, down, recent, up } = getCriteriaChecks(member, criteria);
 
-      const downReasons = down.filter(c => c.hit).map(c => `${c.label} ${c.value} ${c.op} ${c.limit}${c.suffix}`);
-      if (downReasons.length) {
-        return isElder
-          ? { text: 'Degradera till medlem', weight: 1, className: 'review', reason: downReasons.join(', ') }
-          : { text: 'Kicka', weight: 0, className: 'kick', reason: downReasons.join(', ') };
+      const hits = down.filter(c => c.hit);
+      if (hits.length) {
+        const severe = hits.some(c => c.severe);
+        const order = (severe ? 0 : 1) + (isElder ? 0.5 : 0);
+        return {
+          text: isElder ? 'Degradera till medlem' : 'Kicka',
+          weight: order,
+          className: severe ? 'kick' : 'review',
+          reason: hits.map(c => `${c.label} ${c.value} ${c.op} ${c.limit}${c.suffix}`).join(', ')
+        };
       }
 
       const warning = down.find(c => c.warn);
       if (warning) {
-        return { text: 'Varning', weight: 2, className: 'warn', reason: `${warning.label} ${warning.value} ${warning.op} ${warning.limit}${warning.suffix}` };
+        return { text: isElder ? 'Varning' : 'Håll koll', weight: 2, className: 'warn', reason: `${warning.label} ${warning.value} ${warning.op} ${warning.limit}${warning.suffix}` };
       }
 
       if (recent.hit) {
@@ -1879,6 +1930,7 @@
           warPossibleDecks: warPossibleDecks,
           liveDecks: liveDecks,
           livePossibleDecks: livePossibleDecks,
+          memberCount: currentMembers.length,
           fullWarStreak: fullWarStreak,
           history: war.history,
           inLatestWar: inLatestWar,
@@ -1908,6 +1960,7 @@
           warPossibleDecks: warPossibleDecks,
           liveDecks: liveDecks,
           livePossibleDecks: livePossibleDecks,
+          memberCount: currentMembers.length,
           fullWarStreak: fullWarStreak,
           afk: afk,
           warDecksUsed: Number(warEntry?.decksUsed || 0),
@@ -3394,7 +3447,7 @@
         enabled: c.enabled,
         rule: `${action} om ${c.label.toLowerCase()} ${c.ruleOp} ${c.limit}${c.ruleSuffix}`,
         value: c.value,
-        outcome: !c.enabled ? '– Av' : (c.hit ? '⚠ Slår till' : (c.warn ? `⚠ Varning${c.suffix}` : '✓ Slår inte till'))
+        outcome: !c.enabled ? '– Av' : (c.hit ? '⚠ Slår till' : (c.warn ? `⚠ ${isElder ? 'Varning' : 'Håll koll'}${c.suffix}` : '✓ Slår inte till'))
       }));
       rows.push({
         enabled: recent.enabled,
@@ -3411,7 +3464,7 @@
 
       const footnote = isElder
         ? 'Något av kick/degraderings-villkoren räcker. Elders befordras inte automatiskt.'
-        : 'Något av kick-villkoren räcker för kick. Befordran kräver att alla aktiva befordringsvillkor är uppfyllda.';
+        : 'Något av kick-villkoren räcker för kick. Under gränsen för allvarligt blir det kick även med lediga platser eller bra historik, annars Håll koll. Befordran kräver att alla aktiva befordringsvillkor är uppfyllda.';
       return { rows, footnote };
     }
 

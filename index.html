@@ -1200,6 +1200,12 @@
             </div>
             <div class="criteria-field">
               <div class="criteria-field-header">
+                <label class="criteria-toggle" for="criteria-deckWindowWars">…avslutade krig, plus pågående krig</label>
+              </div>
+              <input id="criteria-deckWindowWars" type="number" min="1" step="1" value="1">
+            </div>
+            <div class="criteria-field">
+              <div class="criteria-field-header">
                 <label class="criteria-toggle"><input id="criteria-demoteElderMissedDecksEnabled" type="checkbox"> Degradera elder, missade decks fler än</label>
               </div>
               <input id="criteria-demoteElderMissedDecks" type="number" min="0" max="16" step="1" value="0">
@@ -1344,6 +1350,7 @@
     const defaultCriteria = {
       kickMemberDeckShare: 75,
       kickMemberDeckShareEnabled: true,
+      deckWindowWars: 1,
       promoteElderFullWars: 3,
       promoteElderFullWarsEnabled: true,
       demoteElderMissedDecks: 0,
@@ -1399,6 +1406,7 @@
       return {
         kickMemberDeckShare: Number(document.getElementById('criteria-kickMemberDeckShare').value || defaultCriteria.kickMemberDeckShare),
         kickMemberDeckShareEnabled: document.getElementById('criteria-kickMemberDeckShareEnabled').checked,
+        deckWindowWars: Number(document.getElementById('criteria-deckWindowWars').value || defaultCriteria.deckWindowWars),
         promoteElderFullWars: Number(document.getElementById('criteria-promoteElderFullWars').value || defaultCriteria.promoteElderFullWars),
         promoteElderFullWarsEnabled: document.getElementById('criteria-promoteElderFullWarsEnabled').checked,
         demoteElderMissedDecks: Number(document.getElementById('criteria-demoteElderMissedDecks').value || defaultCriteria.demoteElderMissedDecks),
@@ -1420,6 +1428,7 @@
     function updateCriteriaInputsState() {
       const toggles = [
         ['criteria-kickMemberDeckShareEnabled', 'criteria-kickMemberDeckShare'],
+        ['criteria-kickMemberDeckShareEnabled', 'criteria-deckWindowWars'],
         ['criteria-promoteElderFullWarsEnabled', 'criteria-promoteElderFullWars'],
         ['criteria-demoteElderMissedDecksEnabled', 'criteria-demoteElderMissedDecks'],
         ['criteria-demoteElderMissedDecksEnabled', 'criteria-demoteElderWeakWars'],
@@ -1517,6 +1526,7 @@
     // An elder's missed-decks check only hits after several weak wars in a row and warns before that.
     function getCriteriaChecks(member, criteria) {
       const isElder = member.role === 'elder';
+      const deckWindow = getDeckWindow(member, Number(criteria.deckWindowWars));
       const withState = check => {
         const enabled = isCriterionEnabled(criteria, check.key);
         const limit = Number(criteria[check.key]);
@@ -1526,8 +1536,8 @@
       // `above` checks hit when the value is over the limit, the others when it is under.
       // Members must use a share of their possible decks; elders keep the title by playing full wars.
       const deckCheck = isElder
-        ? { key: 'demoteElderMissedDecks', label: 'Missade decks', value: member.latestWarMissedDecks, above: true }
-        : { key: 'kickMemberDeckShare', label: 'Andel decks (%)', value: member.latestWarDeckShare };
+        ? { key: 'demoteElderMissedDecks', label: 'Missade decks', value: deckWindow.possible - deckWindow.played, above: true }
+        : { key: 'kickMemberDeckShare', label: 'Andel decks (%)', value: deckWindow.share };
       const down = [
         deckCheck,
         { key: 'kickAvgDecks', label: 'Decks/krig', value: member.avgDecks },
@@ -1543,11 +1553,14 @@
       }));
 
       const missed = down[0];
-      const details = [`${member.latestWarParticipation} av ${member.latestWarPossibleDecks} möjliga decks`];
+      const details = [`${deckWindow.played} av ${deckWindow.possible} möjliga decks`];
+      if (member.livePossibleDecks > 0) details.push('inkl. pågående krig');
       if (member.latestWarPossibleDecks < 16) details.push('gick med under kriget');
       if (isElder) {
         const needed = Number(criteria.demoteElderWeakWars);
-        const streak = getWeakWarStreak(member.history || [], member.latestWarPossibleDecks, missed.limit);
+        // The war in progress adds to the streak once it has too many missed decks, but cannot break it yet.
+        const liveWeak = member.livePossibleDecks - member.liveDecks > missed.limit;
+        const streak = (liveWeak ? 1 : 0) + getWeakWarStreak(member.history || [], member.latestWarPossibleDecks, missed.limit);
         missed.hit = missed.enabled && streak >= needed;
         missed.warn = missed.enabled && streak > 0 && !missed.hit;
         details.push(`${Math.min(streak, needed)} av ${needed} krig i rad`);
@@ -1568,7 +1581,7 @@
       return { isElder, down, recent, up };
     }
 
-    // Members/elders are judged on their latest finished war. Leaders and co-leaders are handled manually.
+    // Members/elders are judged on the latest finished war(s) and the finished days of the war in progress. Leaders and co-leaders are handled manually.
     function getRecommendation(member, criteria) {
       if (member.afk) {
         return { text: 'AFK-undantag', weight: 3, className: 'good', reason: 'Undantagen från veckans regler' };
@@ -1578,7 +1591,7 @@
         return { text: 'Manuell bedömning', weight: 3, className: 'good', reason: 'Utses manuellt' };
       }
 
-      if (!member.inLatestWar) {
+      if (!member.hasDeckData) {
         return { text: 'Ny medlem', weight: 3, className: 'good', reason: 'Ingen data från senaste kriget' };
       }
 
@@ -1615,7 +1628,7 @@
         };
       }
 
-      if (member.latestWarParticipation === 0) {
+      if (member.inLatestWar && member.latestWarParticipation === 0) {
         return { text: 'Inaktiv', weight: 2, className: 'review', reason: 'Inga decks i senaste kriget' };
       }
 
@@ -1679,12 +1692,26 @@
       return joins;
     }
 
-    // Decks a player could play in a war that started at `warStart`, given when they (last) joined.
-    // The day they joined does not count, nor do days before it.
-    function getPossibleDecks(joined, warStart) {
-      if (!joined || !warStart || joined <= warStart) return WAR_DAY_NAMES.length * DECKS_PER_DAY;
+    // Decks a player could play in the first `days` days of a war that started at `warStart`, given when
+    // they (last) joined. The day they joined does not count, nor do days before it.
+    function getPossibleDecks(joined, warStart, days = WAR_DAY_NAMES.length) {
+      if (!joined || !warStart || joined <= warStart) return days * DECKS_PER_DAY;
       const joinDay = Math.floor((joined - warStart) / (24 * 60 * 60 * 1000)) + 1;
-      return Math.max(0, WAR_DAY_NAMES.length - joinDay) * DECKS_PER_DAY;
+      return Math.max(0, days - joinDay) * DECKS_PER_DAY;
+    }
+
+    // Decks played and possible over the `wars` latest finished wars plus the finished days of the war in
+    // progress. Wars the player was not in are skipped. Extra decks in one war cannot cover for another
+    // (they happen when a player used decks on the day they joined).
+    function getDeckWindow(member, wars) {
+      let played = Math.min(member.liveDecks, member.livePossibleDecks);
+      let possible = member.livePossibleDecks;
+      member.warPossibleDecks.slice(0, wars).forEach((warPossible, i) => {
+        if (member.history[i] === null) return;
+        played += Math.min(member.history[i], warPossible);
+        possible += warPossible;
+      });
+      return { played, possible, share: possible > 0 ? Math.round((played / possible) * 100) : 0 };
     }
 
     function parseLastSeen(str) {
@@ -1733,7 +1760,13 @@
       const warStats = {};
       const latestWarEnd = parseApiTime(historyRaces[0]?.createdDate);
       // The battle days are the last days before the war ends (createdDate).
-      const latestWarStart = latestWarEnd && new Date(latestWarEnd.getTime() - WAR_DAY_NAMES.length * 24 * 60 * 60 * 1000);
+      const warStarts = historyRaces.map(race => {
+        const warEnd = parseApiTime(race.createdDate);
+        return warEnd && new Date(warEnd.getTime() - WAR_DAY_NAMES.length * 24 * 60 * 60 * 1000);
+      });
+      // The war in progress starts after the three training days that follow the latest finished war.
+      const liveWarStart = latestWarEnd && new Date(latestWarEnd.getTime() + 3 * 24 * 60 * 60 * 1000);
+      const finishedWarDays = currentWarInfo.active ? currentWarInfo.day - 1 : 0;
       const latestJoins = getLatestJoins(dashboardState.events);
       let totalClanAvgFame = 0;
       let activeWarriorsCount = 0;
@@ -1776,11 +1809,8 @@
         // they joined: on that day they may already have used their decks in another clan. One who joined on
         // the last day, or after the war (the war log can still list them from an earlier short stay), is
         // expected nothing, so that war says nothing about how they play for us.
-        const latestWarPossibleDecks = getPossibleDecks(latestJoins.get(m.tag), latestWarStart);
-        const latestWarMissedDecks = Math.max(0, latestWarPossibleDecks - latestWarParticipation);
-        const latestWarDeckShare = latestWarPossibleDecks > 0
-          ? Math.min(100, Math.round((latestWarParticipation / latestWarPossibleDecks) * 100))
-          : 0;
+        const warPossibleDecks = warStarts.map(warStart => getPossibleDecks(latestJoins.get(m.tag), warStart));
+        const latestWarPossibleDecks = warPossibleDecks.length ? warPossibleDecks[0] : getPossibleDecks(latestJoins.get(m.tag), null);
         const inLatestWar = war.history.length > 0 && war.history[0] !== null && latestWarPossibleDecks > 0;
         const fullWarStreak = getFullWarStreak(war.history);
         const avgFame = activeWeeks > 0 ? Math.round(war.fame / activeWeeks) : 0;
@@ -1825,6 +1855,10 @@
         const donationsPerWar = activeWeeks > 0 ? Math.round(donationsValue / activeWeeks) : 0;
         const afk = isAfk(m.tag);
         const warEntry = warParticipants.get(m.tag);
+        // Today does not count until it is over: the player can still use their decks.
+        const liveDecks = finishedWarDays > 0 ? Number(warEntry?.decksUsed || 0) - Number(warEntry?.decksUsedToday || 0) : 0;
+        const livePossibleDecks = getPossibleDecks(latestJoins.get(m.tag), liveWarStart, finishedWarDays);
+        const hasDeckData = inLatestWar || livePossibleDecks > 0;
         // Active = used decks in the current or the latest finished war. The API lists everyone in the clan
         // as a participant, so being listed with 0 decks does not count.
         const activeWarrior = Number(warEntry?.decksUsed || 0) > 0 || latestWarParticipation > 0;
@@ -1842,11 +1876,13 @@
           latestWarParticipation: latestWarParticipation,
           latestWarFame: latestWarFame,
           latestWarPossibleDecks: latestWarPossibleDecks,
-          latestWarMissedDecks: latestWarMissedDecks,
-          latestWarDeckShare: latestWarDeckShare,
+          warPossibleDecks: warPossibleDecks,
+          liveDecks: liveDecks,
+          livePossibleDecks: livePossibleDecks,
           fullWarStreak: fullWarStreak,
           history: war.history,
           inLatestWar: inLatestWar,
+          hasDeckData: hasDeckData,
           afk: afk,
         }, currentCriteria);
 
@@ -1869,13 +1905,15 @@
           latestWarParticipation: latestWarParticipation,
           latestWarFame: latestWarFame,
           latestWarPossibleDecks: latestWarPossibleDecks,
-          latestWarMissedDecks: latestWarMissedDecks,
-          latestWarDeckShare: latestWarDeckShare,
+          warPossibleDecks: warPossibleDecks,
+          liveDecks: liveDecks,
+          livePossibleDecks: livePossibleDecks,
           fullWarStreak: fullWarStreak,
           afk: afk,
           warDecksUsed: Number(warEntry?.decksUsed || 0),
           warDecksToday: Number(warEntry?.decksUsedToday || 0),
           inLatestWar: inLatestWar,
+          hasDeckData: hasDeckData,
           inactive: !afk && inLatestWar && latestWarParticipation === 0,
           tenureWeeks: tenureWeeks,
           activeWarrior: activeWarrior,
@@ -3346,7 +3384,7 @@
       if (member.role !== 'member' && member.role !== 'elder') {
         return { note: 'Ledare och co-leaders utses manuellt, så inga regler tillämpas.' };
       }
-      if (!member.inLatestWar) {
+      if (!member.hasDeckData) {
         return { note: 'Ingen data från senaste kriget (nyligen inträdd), så inga regler tillämpas.' };
       }
 

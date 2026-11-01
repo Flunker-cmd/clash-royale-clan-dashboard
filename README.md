@@ -14,18 +14,25 @@ One war runs Thursday to Sunday, and a full war is all 16 decks used.
   Elder. A war with fewer decks, or one the player was not in the clan for,
   breaks the streak. Fame does not matter for promotion.
 - Member who used less than 75% of their possible decks in the **latest
-  finished war** (fewer than 12 of 16): kick. Kick and demotion count decks
-  only; fame does not matter.
-- Elder who missed decks in each of the **2 latest finished wars**: demote to
-  Member (Elder works as an extra life). One such war gives a warning. A war the
-  player was not in the clan for does not count as weak.
-- A player who joined during the latest war only has to play the full days
-  after the day they joined (4 decks per day). The day they joined does not
-  count, since they may already have used their decks in another clan.
+  finished war plus the finished days of the war in progress**: kick. How many
+  finished wars count can be changed in the dashboard (default 1). Between wars
+  and on the first war day this is just the latest finished war (fewer than 12
+  of 16). Kick and demotion count decks only; fame does not matter.
+- Elder who missed decks in each of the **2 latest wars**: demote to Member
+  (Elder works as an extra life). The war in progress counts as one of them as
+  soon as decks are missed on a finished day; with no decks missed yet it neither
+  counts nor breaks the streak. One such war gives a warning. A war the player
+  was not in the clan for does not count as weak.
+- Today only counts once the day is over, since a player can still use their
+  decks.
+- A player who joined during a war only has to play the full days after the day
+  they joined (4 decks per day). The day they joined does not count, since they
+  may already have used their decks in another clan.
 - Co-Leaders are appointed manually and never get a recommendation
-- Members with no data for the latest war (newly joined) are not evaluated.
-  Neither are players who joined on its last day or after it ended (the war log
-  may list them from an earlier short stay in the clan).
+- Members with no data for the latest war and no finished days to play in the
+  war in progress (newly joined) are not evaluated. Neither are players who
+  joined on its last day or after it ended (the war log may list them from an
+  earlier short stay in the clan), until they have a finished day to play.
 
 The dashboard always opens with these defaults.
 

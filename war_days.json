@@ -1232,7 +1232,7 @@
       }
     },
     "4": {
-      "updated": "2026-11-01T19:56:11Z",
+      "updated": "2026-11-01T23:14:53Z",
       "players": {
         "#UG0LPCL": {
           "name": "FC GUNNER",
@@ -1464,11 +1464,6 @@
           "base": 12,
           "decks": 4
         },
-        "#2JC8C9VVP": {
-          "name": "iron m",
-          "base": 12,
-          "decks": 0
-        },
         "#2L8V08QLL": {
           "name": "Bossebus123",
           "base": 12,
@@ -1489,30 +1484,15 @@
           "base": 12,
           "decks": 4
         },
-        "#2G9PV0LQ0": {
-          "name": "Thabet",
-          "base": 12,
-          "decks": 0
-        },
-        "#UCCL9GC9R": {
-          "name": "Das Meer",
-          "base": 12,
-          "decks": 3
-        },
-        "#P0CV8LUY": {
-          "name": "Gideon",
-          "base": 12,
-          "decks": 0
-        },
         "#8UPLQ90YQ": {
           "name": "Viggen\\\\",
           "base": 12,
           "decks": 4
         },
-        "#VGPYCR0JG": {
-          "name": "Rasse08;)",
+        "#UCCL9GC9R": {
+          "name": "Das Meer",
           "base": 12,
-          "decks": 0
+          "decks": 4
         },
         "#CVYL9CR92": {
           "name": "A19",
@@ -1524,15 +1504,15 @@
           "base": 12,
           "decks": 4
         },
+        "#2JC8C9VVP": {
+          "name": "iron m",
+          "base": 12,
+          "decks": 4
+        },
         "#CC0JPP0UL": {
           "name": "slinky",
           "base": 12,
           "decks": 4
-        },
-        "#CVGCRRCR2": {
-          "name": "Nnea",
-          "base": 12,
-          "decks": 1
         },
         "#CQCUPGGG": {
           "name": "Bjögga",
@@ -1599,6 +1579,16 @@
           "base": 12,
           "decks": 4
         },
+        "#VGPYCR0JG": {
+          "name": "Rasse08;)",
+          "base": 12,
+          "decks": 3
+        },
+        "#P0CV8LUY": {
+          "name": "Gideon",
+          "base": 12,
+          "decks": 4
+        },
         "#20VYLRPCYG": {
           "name": "OG27",
           "base": 12,
@@ -1614,8 +1604,18 @@
           "base": 12,
           "decks": 4
         },
+        "#2G9PV0LQ0": {
+          "name": "Thabet",
+          "base": 12,
+          "decks": 4
+        },
         "#PPJPY09GP": {
           "name": "BjalkenGG",
+          "base": 12,
+          "decks": 4
+        },
+        "#CVGCRRCR2": {
+          "name": "Nnea",
           "base": 12,
           "decks": 4
         },

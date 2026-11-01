@@ -2,6 +2,14 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-01T23:14:53Z",
+      "type": "promoted",
+      "tag": "#G0JQ08299",
+      "name": "Tren 9",
+      "from": "member",
+      "to": "elder"
+    },
+    {
       "date": "2026-11-01T19:56:11Z",
       "type": "left",
       "tag": "#PJCJ929Q2",

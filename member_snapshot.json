@@ -1,11 +1,31 @@
 {
+  "#P0CV8LUY": {
+    "name": "Gideon",
+    "role": "elder"
+  },
+  "#VGPYCR0JG": {
+    "name": "Rasse08;)",
+    "role": "elder"
+  },
+  "#2QGGPPYCP": {
+    "name": "herman@:com",
+    "role": "elder"
+  },
+  "#8VV8GGGPY": {
+    "name": "Leo",
+    "role": "elder"
+  },
+  "#UVJU8Q90V": {
+    "name": "WilliR5",
+    "role": "elder"
+  },
   "#2L8V08QLL": {
     "name": "Bossebus123",
     "role": "elder"
   },
   "#G0JQ08299": {
     "name": "Tren 9",
-    "role": "member"
+    "role": "elder"
   },
   "#CQCUPGGG": {
     "name": "Bjögga",
@@ -19,18 +39,6 @@
     "name": "Oskar :)",
     "role": "elder"
   },
-  "#UVJU8Q90V": {
-    "name": "WilliR5",
-    "role": "elder"
-  },
-  "#8VV8GGGPY": {
-    "name": "Leo",
-    "role": "elder"
-  },
-  "#2QGGPPYCP": {
-    "name": "herman@:com",
-    "role": "elder"
-  },
   "#PPUUULVU2": {
     "name": "Julia",
     "role": "elder"
@@ -41,14 +49,6 @@
   },
   "#8UPLQ90YQ": {
     "name": "Viggen\\\\",
-    "role": "elder"
-  },
-  "#VGPYCR0JG": {
-    "name": "Rasse08;)",
-    "role": "elder"
-  },
-  "#P0CV8LUY": {
-    "name": "Gideon",
     "role": "elder"
   },
   "#9PQPP2GVG": {

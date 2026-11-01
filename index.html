@@ -2003,14 +2003,17 @@
       }
     }
 
+    // GitHub Pages lets browsers keep files for 10 minutes, so ask the server whether they changed.
+    const fetchFresh = url => fetch(url, { cache: 'no-cache' });
+
     async function loadDashboard() {
       try {
         const [membersRes, historyRes, warRes, eventsRes, warDaysRes] = await Promise.all([
-          fetch('clan_members.json'),
-          fetch('history_data.json'),
-          fetch('clan_data.json').catch(() => null),
-          fetch('member_events.json').catch(() => null),
-          fetch('war_days.json').catch(() => null)
+          fetchFresh('clan_members.json'),
+          fetchFresh('history_data.json'),
+          fetchFresh('clan_data.json').catch(() => null),
+          fetchFresh('member_events.json').catch(() => null),
+          fetchFresh('war_days.json').catch(() => null)
         ]);
 
         const lastModHeader = membersRes.headers.get('last-modified');

@@ -822,7 +822,7 @@
       }
     },
     "3": {
-      "updated": "2026-10-31T22:00:19Z",
+      "updated": "2026-11-01T01:36:16Z",
       "players": {
         "#UG0LPCL": {
           "name": "FC GUNNER",
@@ -1014,11 +1014,6 @@
           "base": 4,
           "decks": 0
         },
-        "#QJ920VG2C": {
-          "name": "isak",
-          "base": 4,
-          "decks": 0
-        },
         "#29YR2U0VP": {
           "name": "RONALD + RONALD",
           "base": 5,
@@ -1028,11 +1023,6 @@
           "name": "Reavy",
           "base": 3,
           "decks": 4
-        },
-        "#8UPLQ90YQ": {
-          "name": "Viggen\\\\",
-          "base": 8,
-          "decks": 0
         },
         "#2QL8VQRUP": {
           "name": "The Viking",
@@ -1044,10 +1034,10 @@
           "base": 4,
           "decks": 4
         },
-        "#UVJU8Q90V": {
-          "name": "WilliR5",
-          "base": 8,
-          "decks": 0
+        "#QJ920VG2C": {
+          "name": "isak",
+          "base": 4,
+          "decks": 4
         },
         "#CJLPGJ2CY": {
           "name": "BRUNO",
@@ -1063,11 +1053,6 @@
           "name": "skogsankan",
           "base": 8,
           "decks": 4
-        },
-        "#P0CV8LUY": {
-          "name": "Gideon",
-          "base": 8,
-          "decks": 0
         },
         "#20CRLUGCP9": {
           "name": "BjalkenX",
@@ -1094,6 +1079,11 @@
           "base": 8,
           "decks": 4
         },
+        "#8UPLQ90YQ": {
+          "name": "Viggen\\\\",
+          "base": 8,
+          "decks": 4
+        },
         "#PRVR9J9": {
           "name": "Limpan",
           "base": 8,
@@ -1116,6 +1106,11 @@
         },
         "#2JC8C9VVP": {
           "name": "iron m",
+          "base": 8,
+          "decks": 4
+        },
+        "#UVJU8Q90V": {
+          "name": "WilliR5",
           "base": 8,
           "decks": 4
         },
@@ -1168,6 +1163,11 @@
           "name": "wisely",
           "base": 8,
           "decks": 4
+        },
+        "#P0CV8LUY": {
+          "name": "Gideon",
+          "base": 8,
+          "decks": 3
         },
         "#CVYL9CR92": {
           "name": "A19",

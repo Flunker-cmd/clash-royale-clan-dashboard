@@ -822,7 +822,7 @@
       }
     },
     "3": {
-      "updated": "2026-11-01T07:33:50Z",
+      "updated": "2026-11-01T08:19:29Z",
       "players": {
         "#UG0LPCL": {
           "name": "FC GUNNER",
@@ -1079,11 +1079,6 @@
           "base": 8,
           "decks": 4
         },
-        "#8CVLPV9YR": {
-          "name": "Piggelin",
-          "base": 8,
-          "decks": 0
-        },
         "#UCCL9GC9R": {
           "name": "Das Meer",
           "base": 8,
@@ -1221,6 +1216,11 @@
         },
         "#8VV8GGGPY": {
           "name": "Leo",
+          "base": 8,
+          "decks": 4
+        },
+        "#8CVLPV9YR": {
+          "name": "Piggelin",
           "base": 8,
           "decks": 4
         },

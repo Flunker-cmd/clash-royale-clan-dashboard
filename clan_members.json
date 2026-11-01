@@ -4,7 +4,7 @@
   "type": "open",
   "description": "Vi kör Clan Wars, joina inte om du inte spelar CW torsdag till Söndag. vi är en Aktiv Klan! Code: RoyaleAPI",
   "badgeId": 16000062,
-  "clanScore": 132212,
+  "clanScore": 132231,
   "clanWarTrophies": 3323,
   "location": {
     "id": 57000225,
@@ -13,7 +13,7 @@
     "countryCode": "SE"
   },
   "requiredTrophies": 7000,
-  "donationsPerWeek": 12794,
+  "donationsPerWeek": 12855,
   "clanChestStatus": "inactive",
   "clanChestLevel": 1,
   "clanChestMaxLevel": 0,
@@ -326,6 +326,24 @@
       "clanChestPoints": 0
     },
     {
+      "tag": "#RYY092PLU",
+      "name": "bagge",
+      "role": "member",
+      "lastSeen": "20261101T080017.000Z",
+      "expLevel": 0,
+      "trophies": 13798,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 18,
+      "previousClanRank": 19,
+      "donations": 50,
+      "donationsReceived": 0,
+      "clanChestPoints": 0
+    },
+    {
       "tag": "#CVYL9CR92",
       "name": "A19",
       "role": "elder",
@@ -337,7 +355,7 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 18,
+      "clanRank": 19,
       "previousClanRank": 20,
       "donations": 198,
       "donationsReceived": 460,
@@ -355,28 +373,10 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 19,
+      "clanRank": 20,
       "previousClanRank": 18,
       "donations": 240,
       "donationsReceived": 320,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#RYY092PLU",
-      "name": "bagge",
-      "role": "member",
-      "lastSeen": "20261031T092810.000Z",
-      "expLevel": 0,
-      "trophies": 13711,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 20,
-      "previousClanRank": 19,
-      "donations": 50,
-      "donationsReceived": 0,
       "clanChestPoints": 0
     },
     {
@@ -419,7 +419,7 @@
       "tag": "#8CVLPV9YR",
       "name": "Piggelin",
       "role": "elder",
-      "lastSeen": "20261101T073204.000Z",
+      "lastSeen": "20261101T080840.000Z",
       "expLevel": 0,
       "trophies": 13063,
       "arena": {
@@ -430,14 +430,14 @@
       "clanRank": 23,
       "previousClanRank": 22,
       "donations": 250,
-      "donationsReceived": 710,
+      "donationsReceived": 720,
       "clanChestPoints": 0
     },
     {
       "tag": "#URUQ09LVG",
       "name": "wisely",
       "role": "coLeader",
-      "lastSeen": "20261101T073042.000Z",
+      "lastSeen": "20261101T073602.000Z",
       "expLevel": 0,
       "trophies": 12750,
       "arena": {
@@ -447,8 +447,8 @@
       },
       "clanRank": 24,
       "previousClanRank": 24,
-      "donations": 268,
-      "donationsReceived": 624,
+      "donations": 288,
+      "donationsReceived": 635,
       "clanChestPoints": 0
     },
     {
@@ -502,7 +502,7 @@
       "clanRank": 27,
       "previousClanRank": 27,
       "donations": 581,
-      "donationsReceived": 550,
+      "donationsReceived": 560,
       "clanChestPoints": 0
     },
     {
@@ -581,7 +581,7 @@
       "tag": "#2G9PV0LQ0",
       "name": "Thabet",
       "role": "elder",
-      "lastSeen": "20261031T170407.000Z",
+      "lastSeen": "20261101T080712.000Z",
       "expLevel": 0,
       "trophies": 11846,
       "arena": {
@@ -635,7 +635,7 @@
       "tag": "#2JC8C9VVP",
       "name": "iron m",
       "role": "elder",
-      "lastSeen": "20261101T022551.000Z",
+      "lastSeen": "20261101T075942.000Z",
       "expLevel": 0,
       "trophies": 11442,
       "arena": {
@@ -645,7 +645,7 @@
       },
       "clanRank": 35,
       "previousClanRank": 35,
-      "donations": 468,
+      "donations": 486,
       "donationsReceived": 760,
       "clanChestPoints": 0
     },
@@ -673,7 +673,7 @@
       "role": "member",
       "lastSeen": "20261101T073235.000Z",
       "expLevel": 0,
-      "trophies": 10900,
+      "trophies": 10872,
       "arena": {
         "id": 54000130,
         "name": "Royal Road",
@@ -682,7 +682,7 @@
       "clanRank": 37,
       "previousClanRank": 38,
       "donations": 611,
-      "donationsReceived": 290,
+      "donationsReceived": 310,
       "clanChestPoints": 0
     },
     {
@@ -779,9 +779,9 @@
       "tag": "#CC0JPP0UL",
       "name": "slinky",
       "role": "elder",
-      "lastSeen": "20261031T210336.000Z",
+      "lastSeen": "20261101T074328.000Z",
       "expLevel": 0,
-      "trophies": 9622,
+      "trophies": 9593,
       "arena": {
         "id": 54000031,
         "name": "Legendary Arena",
@@ -789,7 +789,7 @@
       },
       "clanRank": 43,
       "previousClanRank": 44,
-      "donations": 16,
+      "donations": 19,
       "donationsReceived": 0,
       "clanChestPoints": 0
     },
@@ -835,7 +835,7 @@
       "role": "member",
       "lastSeen": "20261101T072525.000Z",
       "expLevel": 0,
-      "trophies": 2099,
+      "trophies": 2125,
       "arena": {
         "id": 54000008,
         "name": "Royal Arena",
@@ -843,8 +843,8 @@
       },
       "clanRank": 46,
       "previousClanRank": 47,
-      "donations": 186,
-      "donationsReceived": 300,
+      "donations": 206,
+      "donationsReceived": 310,
       "clanChestPoints": 0
     }
   ]

@@ -404,6 +404,7 @@
     .loyalty-text {
       font-size: 0.85em;
       color: #cbd5e1;
+      white-space: nowrap;
     }
 
     .legend {
@@ -1291,7 +1292,7 @@
           <option value="decks">Sortera: Totala decks</option>
           <option value="trophies">Sortera: Troféer</option>
           <option value="donations">Sortera: Donationer</option>
-          <option value="weeks">Sortera: Krigslojalitet</option>
+          <option value="warsPlayed">Sortera: Avslutade krig</option>
         </select>
         <button class="btn mobile-only" onclick="sortTable(currentSortColumn)" title="Byt sorteringsriktning" aria-label="Byt sorteringsriktning">⇅</button>
       </div>
@@ -1312,8 +1313,8 @@
             <th onclick="sortTable('donations')">Donationer <span id="sort-donations"></span></th>
             <th onclick="sortTable('avgDecks')">Antal decks per krig <span id="sort-avgDecks"></span></th>
             <th onclick="sortTable('decks')">Totala decks (max 160) <span id="sort-decks"></span></th>
-            <th onclick="sortTable('warDecksUsed')">Pågående krig <span id="sort-warDecksUsed"></span></th>
-            <th onclick="sortTable('weeks')">Krigslojalitet <span id="sort-weeks"></span></th>
+            <th onclick="sortTable('warDecksUsed')" title="Rutorna visar dagens decks. Hittills räknar hela kriget.">Pågående krig <span id="sort-warDecksUsed"></span></th>
+            <th onclick="sortTable('warsPlayed')" title="Rutorna visar avslutade krig, nyaste längst till höger. Pågående krig räknas inte in.">Avslutade krig <span id="sort-warsPlayed"></span></th>
             <th onclick="sortTable('recommendationWeight')">Åtgärd / rekommendation <span id="sort-recommendationWeight"></span></th>
           </tr>
         </thead>
@@ -1329,6 +1330,7 @@
       <div class="legend-item"><div class="dot partial"></div> Delvist deltagande (1-15 decks)</div>
       <div class="legend-item"><div class="dot missed"></div> Missat krig / inaktiv (0 decks)</div>
       <div class="legend-item"><div class="dot none"></div> Inte med i klanen</div>
+      <div class="legend-item">Avslutade krig: nyaste kriget längst till höger, pågående krig räknas inte in. Håll musen över en ruta för datum.</div>
     </div>
 
     <footer>
@@ -1878,26 +1880,29 @@
         }
 
         let tenureWeeks = firstSeenIndex !== -1 ? (firstSeenIndex + 1) : 0;
-        let loyaltyRatio = tenureWeeks > 0 ? `${activeWeeks} / ${tenureWeeks} veckor` : "0 / 0 veckor";
+        // The war log also lists players who used no decks, so being listed does not count as playing.
+        const warsPlayed = war.history.filter(decks => decks > 0).length;
+        let loyaltyRatio = `${warsPlayed} / ${tenureWeeks} krig`;
 
         const dotCounts = { full: 0, partial: 0, missed: 0 };
         let dots = '';
         for (let i = totalWeeks - 1; i >= 0; i--) {
           const decks = war.history[i];
+          const warLabel = `Krig som slutade ${formatShortDate(parseRaceDate(historyRaces[i]?.createdDate))}`;
           if (decks !== null && decks >= 16) {
             dotCounts.full++;
-            dots += `<div class="dot full" data-tooltip="Vecka ${totalWeeks - i}: ${decks}/16 decks använda"></div>`;
+            dots += `<div class="dot full" data-tooltip="${warLabel}: ${decks}/16 decks använda"></div>`;
           } else if (decks !== null && decks > 0) {
             dotCounts.partial++;
-            dots += `<div class="dot partial" data-tooltip="Vecka ${totalWeeks - i}: ${decks}/16 decks använda"></div>`;
+            dots += `<div class="dot partial" data-tooltip="${warLabel}: ${decks}/16 decks använda"></div>`;
           } else if (decks !== null && decks === 0) {
             dotCounts.missed++;
-            dots += `<div class="dot missed" data-tooltip="Vecka ${totalWeeks - i}: 0/16 decks använda"></div>`;
+            dots += `<div class="dot missed" data-tooltip="${warLabel}: 0/16 decks använda"></div>`;
           } else if (firstSeenIndex !== -1 && i <= firstSeenIndex) {
             dotCounts.missed++;
-            dots += `<div class="dot missed" data-tooltip="Vecka ${totalWeeks - i}: Missat krig"></div>`;
+            dots += `<div class="dot missed" data-tooltip="${warLabel}: Missat krig"></div>`;
           } else {
-            dots += `<div class="dot none" data-tooltip="Vecka ${totalWeeks - i}: Inte med i klanen"></div>`;
+            dots += `<div class="dot none" data-tooltip="${warLabel}: Inte med i klanen"></div>`;
           }
         }
         const dotsHtml = `<div class="timeline" role="img" aria-label="Senaste ${totalWeeks} krigen, äldsta först: ${dotCounts.full} med alla decks, ${dotCounts.partial} med några decks, ${dotCounts.missed} missade">${dots}</div>`;
@@ -1954,6 +1959,7 @@
           sparklineHtml: createSparkline(war.fameHistory),
           decks: war.decks,
           weeks: activeWeeks,
+          warsPlayed: warsPlayed,
           latestWarParticipation: latestWarParticipation,
           latestWarFame: latestWarFame,
           latestWarPossibleDecks: latestWarPossibleDecks,
@@ -2323,7 +2329,7 @@
       return `
             <div class="loyalty-cell">
               <div class="timeline" role="img" aria-label="Idag: ${m.warDecksToday} av ${DECKS_PER_DAY} decks spelade">${dots}</div>
-              <span class="loyalty-text">${m.warDecksUsed} / ${currentWarInfo.day * DECKS_PER_DAY} decks</span>
+              <span class="loyalty-text">Idag ${m.warDecksToday} / ${DECKS_PER_DAY}<br>Hittills ${m.warDecksUsed} / ${currentWarInfo.day * DECKS_PER_DAY}</span>
             </div>`;
     }
 
@@ -3271,7 +3277,7 @@
     function renderTable() {
       const visible = getVisibleMembers();
 
-      ['index', 'name', 'role', 'trophies', 'donations', 'avgDecks', 'decks', 'warDecksUsed', 'weeks', 'recommendationWeight'].forEach(col => {
+      ['index', 'name', 'role', 'trophies', 'donations', 'avgDecks', 'decks', 'warDecksUsed', 'warsPlayed', 'recommendationWeight'].forEach(col => {
         const el = document.getElementById(`sort-${col}`);
         if (el) {
           el.textContent = col === currentSortColumn ? (currentSortAsc ? '▲' : '▼') : '';
@@ -3312,7 +3318,7 @@
           </td>
           <td data-label="Totala decks">${m.decks}</td>
           <td data-label="Pågående krig">${renderWarCell(m)}</td>
-          <td data-label="Krigslojalitet">
+          <td data-label="Avslutade krig">
             <div class="loyalty-cell">
               ${m.dotsHtml}
               <span class="loyalty-text">${m.loyaltyRatio}</span>
@@ -3524,7 +3530,7 @@
         ['Decks per krig', member.avgDecks.toLocaleString()],
         ['Fame per krig', member.avgFame.toLocaleString()],
         ['Senaste krigets fame', member.inLatestWar ? member.latestWarFame.toLocaleString() : '–'],
-        ['Krigslojalitet', member.loyaltyRatio],
+        ['Avslutade krig', member.loyaltyRatio],
         ['Fulla krig i rad', member.fullWarStreak],
         ['Pågående krig', currentWarInfo.active ? `${member.warDecksUsed} / ${currentWarInfo.day * DECKS_PER_DAY} decks` : '–']
       ].forEach(([label, value]) => {

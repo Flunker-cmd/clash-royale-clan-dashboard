@@ -822,7 +822,7 @@
       }
     },
     "3": {
-      "updated": "2026-11-01T01:36:16Z",
+      "updated": "2026-11-01T07:33:50Z",
       "players": {
         "#UG0LPCL": {
           "name": "FC GUNNER",
@@ -1054,25 +1054,10 @@
           "base": 8,
           "decks": 4
         },
-        "#20CRLUGCP9": {
-          "name": "BjalkenX",
-          "base": 8,
-          "decks": 0
-        },
-        "#VGPYCR0JG": {
-          "name": "Rasse08;)",
-          "base": 8,
-          "decks": 0
-        },
         "#2G9PV0LQ0": {
           "name": "Thabet",
           "base": 8,
           "decks": 0
-        },
-        "#GYJVQYR": {
-          "name": "Adam",
-          "base": 8,
-          "decks": 1
         },
         "#UUGUL0JJR": {
           "name": "Padlarn",
@@ -1129,6 +1114,11 @@
           "base": 8,
           "decks": 4
         },
+        "#20CRLUGCP9": {
+          "name": "BjalkenX",
+          "base": 8,
+          "decks": 4
+        },
         "#PPUUULVU2": {
           "name": "Julia",
           "base": 8,
@@ -1154,6 +1144,11 @@
           "base": 8,
           "decks": 4
         },
+        "#GYJVQYR": {
+          "name": "Adam",
+          "base": 8,
+          "decks": 4
+        },
         "#YPCURPPY2": {
           "name": "BullyMeILLc|_|M",
           "base": 8,
@@ -1163,11 +1158,6 @@
           "name": "wisely",
           "base": 8,
           "decks": 4
-        },
-        "#P0CV8LUY": {
-          "name": "Gideon",
-          "base": 8,
-          "decks": 3
         },
         "#CVYL9CR92": {
           "name": "A19",
@@ -1196,6 +1186,16 @@
         },
         "#PPJPY09GP": {
           "name": "BjalkenGG",
+          "base": 8,
+          "decks": 4
+        },
+        "#P0CV8LUY": {
+          "name": "Gideon",
+          "base": 8,
+          "decks": 4
+        },
+        "#VGPYCR0JG": {
+          "name": "Rasse08;)",
           "base": 8,
           "decks": 4
         },

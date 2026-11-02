@@ -1432,7 +1432,7 @@
         "#29YR2U0VP": {
           "name": "RONALD + RONALD",
           "base": 5,
-          "decks": 0
+          "decks": 1
         },
         "#CPCLGY0R": {
           "name": "AMAMAMAMEOJ",
@@ -1447,7 +1447,7 @@
         "#CJLPGJ2CY": {
           "name": "BRUNO",
           "base": 10,
-          "decks": 0
+          "decks": 4
         },
         "#2QL8VQRUP": {
           "name": "The Viking",
@@ -1457,7 +1457,7 @@
         "#UUGUL0JJR": {
           "name": "Padlarn",
           "base": 12,
-          "decks": 0
+          "decks": 4
         },
         "#20929PYR0": {
           "name": "Reavy",
@@ -1472,7 +1472,7 @@
         "#2L8V08QLL": {
           "name": "Bossebus123",
           "base": 12,
-          "decks": 2
+          "decks": 3
         },
         "#YGPJ9PP9Y": {
           "name": "kingmeng",
@@ -1502,7 +1502,7 @@
         "#CVYL9CR92": {
           "name": "A19",
           "base": 12,
-          "decks": 3
+          "decks": 4
         },
         "#UVJU8Q90V": {
           "name": "WilliR5",
@@ -1542,7 +1542,7 @@
         "#8CVLPV9YR": {
           "name": "Piggelin",
           "base": 12,
-          "decks": 0
+          "decks": 4
         },
         "#PRVR9J9": {
           "name": "Limpan",
@@ -1651,5 +1651,7 @@
         }
       }
     }
-  }
+  },
+  "finished": true,
+  "seasonId": 137
 }

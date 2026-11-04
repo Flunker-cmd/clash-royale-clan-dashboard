@@ -2,6 +2,20 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-04T11:41:50Z",
+      "type": "joined",
+      "tag": "#CU8P0GU90",
+      "name": "Yari_Pro",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-04T11:41:50Z",
+      "type": "left",
+      "tag": "#CQCUPGGG",
+      "name": "Bjögga",
+      "role": "elder"
+    },
+    {
       "date": "2026-11-02T20:58:32Z",
       "type": "joined",
       "tag": "#9V2JU28JR",

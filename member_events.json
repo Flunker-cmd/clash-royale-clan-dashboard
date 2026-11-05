@@ -2,6 +2,27 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-05T00:10:48Z",
+      "type": "joined",
+      "tag": "#CQCUPGGG",
+      "name": "Bjögga",
+      "role": "elder"
+    },
+    {
+      "date": "2026-11-05T00:10:48Z",
+      "type": "joined",
+      "tag": "#P8LGPV0P",
+      "name": "oscar",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-05T00:10:48Z",
+      "type": "left",
+      "tag": "#CPCLGY0R",
+      "name": "AMAMAMAMEOJ",
+      "role": "member"
+    },
+    {
       "date": "2026-11-04T18:59:09Z",
       "type": "left",
       "tag": "#9PQPP2GVG",

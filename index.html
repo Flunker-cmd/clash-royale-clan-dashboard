@@ -622,6 +622,21 @@
     }
     .name-link:hover { color: #38bdf8; text-decoration: underline; }
     .name-link:focus-visible { outline: 2px solid #38bdf8; outline-offset: 2px; border-radius: 3px; }
+    .jump-link {
+      padding: 0;
+      background: none;
+      border: 0;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    .jump-link:hover { color: #38bdf8; text-decoration: underline; }
+    .jump-link:focus-visible { outline: 2px solid #38bdf8; outline-offset: 2px; border-radius: 3px; }
+    @keyframes jump-flash {
+      from { background-color: rgba(56, 189, 248, 0.35); }
+      to { background-color: transparent; }
+    }
+    tr.jump-target, tr.jump-target td { animation: jump-flash 2s ease-out; }
     .toolbar-actions { display: flex; flex-wrap: wrap; gap: 8px; }
     .table-empty { margin: 16px 0; color: #94a3b8; text-align: center; }
 
@@ -2175,7 +2190,7 @@
       ].join('');
 
       const pending = getPendingWarPlayers();
-      const chip = m => `<span class="war-chip ${m.warDecksToday === 0 ? 'none' : ''}">${escapeHtml(m.name)} <small>${DECKS_PER_DAY - m.warDecksToday} kvar</small></span>`;
+      const chip = m => `<span class="war-chip ${m.warDecksToday === 0 ? 'none' : ''}">${jumpLink(m)} <small>${DECKS_PER_DAY - m.warDecksToday} kvar</small></span>`;
       const untouched = pending.filter(m => m.warDecksToday === 0);
       const partial = pending.filter(m => m.warDecksToday > 0);
       const group = (heading, players) => players.length
@@ -2252,7 +2267,7 @@
           ? ` · ${m.perDay.map(d => d === null ? '–' : d).join(' ')}`
           : '';
         const title = WAR_DAY_NAMES.map((name, i) => `${name}: ${m.perDay[i] === null ? 'inte med' : `${m.perDay[i]}/${DECKS_PER_DAY}`}`).join(', ');
-        return `<span class="war-chip ${state}" title="${escapeHtml(title)}">${escapeHtml(m.name)} <small>${m.warDecks}/${m.maxDecks}${breakdown}</small></span>`;
+        return `<span class="war-chip ${state}" title="${escapeHtml(title)}">${jumpLink(m)} <small>${m.warDecks}/${m.maxDecks}${breakdown}</small></span>`;
       };
       const group = (heading, list) => {
         const shown = list.filter(m => !m.afk);
@@ -2293,7 +2308,7 @@
 
       const chip = m => {
         const state = m.dayDecks === 0 ? 'none' : (m.dayDecks >= DECKS_PER_DAY ? 'full' : '');
-        return `<span class="war-chip ${state}">${escapeHtml(m.name)} <small>${m.dayDecks}/${DECKS_PER_DAY}</small></span>`;
+        return `<span class="war-chip ${state}">${jumpLink(m)} <small>${m.dayDecks}/${DECKS_PER_DAY}</small></span>`;
       };
       const group = (heading, list) => {
         const shown = list.filter(m => !m.afk);
@@ -3145,13 +3160,13 @@
 
       const topRecommendations = [];
       promote.slice(0, 3).forEach(member => {
-        topRecommendations.push({ type: 'promote', label: 'Befordra', text: `${escapeHtml(member.name)} • ${member.avgDecks.toLocaleString()} decks / krig` });
+        topRecommendations.push({ type: 'promote', label: 'Befordra', text: `${jumpLink(member)} • ${member.avgDecks.toLocaleString()} decks / krig` });
       });
       review.slice(0, 2).forEach(member => {
-        topRecommendations.push({ type: 'review', label: 'Granska', text: `${escapeHtml(member.name)} • ${escapeHtml(member.recommendationText)}` });
+        topRecommendations.push({ type: 'review', label: 'Granska', text: `${jumpLink(member)} • ${escapeHtml(member.recommendationText)}` });
       });
       inactive.slice(0, 2).forEach(member => {
-        topRecommendations.push({ type: 'inactive', label: 'Inaktiv', text: `${escapeHtml(member.name)} • ${member.weeks}/${member.totalWeeks} krig` });
+        topRecommendations.push({ type: 'inactive', label: 'Inaktiv', text: `${jumpLink(member)} • ${member.weeks}/${member.totalWeeks} krig` });
       });
 
       const recommendationsList = document.getElementById('recommendations-list');
@@ -3588,6 +3603,30 @@
       dialog.querySelectorAll('.trend-plot').forEach(plot => drawTrendChart(plot, plot._metric, plot._points));
     }
 
+    // A player's name outside the member table. Clicking it scrolls to their row in the table.
+    const jumpLink = m => `<button class="jump-link" type="button" data-jump="${escapeHtml(m.tag)}">${escapeHtml(m.name)}</button>`;
+
+    function jumpToMember(tag) {
+      const row = [...document.querySelectorAll('#member-table .name-link')]
+        .find(link => link.dataset.tag === tag)?.closest('tr');
+      // The row can be hidden by the search or a filter. Show the player's details instead.
+      if (!row) {
+        openMemberDetail(tag);
+        return;
+      }
+      const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+      row.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      row.classList.remove('jump-target');
+      void row.offsetWidth; // restart the flash if the same row is jumped to again
+      row.classList.add('jump-target');
+      row.querySelector('.name-link').focus({ preventScroll: true });
+    }
+
+    document.addEventListener('click', e => {
+      const link = e.target.closest?.('.jump-link');
+      if (link) jumpToMember(link.dataset.jump);
+    });
+
     // ---- Membership events (written by track_members.py)
     const EVENT_TYPES = {
       joined: { icon: '＋', label: 'Gick med' },
@@ -3619,7 +3658,15 @@
         const icon = makeEl('span', `event-icon ${known ? `is-${event.type}` : ''}`, type.icon);
         icon.setAttribute('aria-hidden', 'true');
         const text = makeEl('span');
-        text.append(`${type.label}: `, makeEl('strong', '', event.name || event.tag));
+        const name = makeEl('strong', '', event.name || event.tag);
+        // Only current members have a row in the table to jump to.
+        if (combinedData.some(m => m.tag === event.tag)) {
+          const link = makeEl('button', 'jump-link', event.name || event.tag);
+          link.type = 'button';
+          link.dataset.jump = event.tag;
+          name.replaceChildren(link);
+        }
+        text.append(`${type.label}: `, name);
         const detail = event.from || event.to
           ? ` (${roleText(event.from)} → ${roleText(event.to)})`
           : (event.role ? ` (${roleText(event.role)})` : '');

@@ -1,6 +1,6 @@
-# clash-royale-tracker
+# clash-royale-clan-dashboard
 
-[Open the published dashboard](https://flunker-cmd.github.io/clash-royale-tracker/)
+[Open the published dashboard](https://flunker-cmd.github.io/clash-royale-clan-dashboard/)
 
 A dashboard for the clan `#L0G0Y0JP`: war participation, recommendations for
 promotions, demotions and kicks, the war in progress, and how the clan develops

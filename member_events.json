@@ -2,6 +2,65 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "demoted",
+      "tag": "#2L8V08QLL",
+      "name": "Bossebus123",
+      "from": "elder",
+      "to": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "demoted",
+      "tag": "#VGPYCR0JG",
+      "name": "Rasse08;)",
+      "from": "elder",
+      "to": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "demoted",
+      "tag": "#2JRJY2LQR",
+      "name": "skogsankan",
+      "from": "elder",
+      "to": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "joined",
+      "tag": "#PG9VYL0PG",
+      "name": "jojo",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "left",
+      "tag": "#8QRCG902Y",
+      "name": "3opåd",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "left",
+      "tag": "#CL28QL900",
+      "name": "Affe",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "left",
+      "tag": "#292020YG0",
+      "name": "jahanzaib",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-06T11:11:36Z",
+      "type": "left",
+      "tag": "#JGJG08L",
+      "name": "lowe",
+      "role": "member"
+    },
+    {
       "date": "2026-11-05T00:10:48Z",
       "type": "joined",
       "tag": "#CQCUPGGG",

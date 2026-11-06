@@ -2,7 +2,7 @@
   "warKey": "0:3",
   "days": {
     "1": {
-      "updated": "2026-11-05T22:08:15Z",
+      "updated": "2026-11-06T02:36:08Z",
       "players": {
         "#98YUVC8": {
           "name": "Oskar :)",
@@ -21,11 +21,6 @@
         },
         "#GYJVQYR": {
           "name": "Adam",
-          "base": 0,
-          "decks": 0
-        },
-        "#V882JC088": {
-          "name": "Teddaren",
           "base": 0,
           "decks": 0
         },
@@ -119,11 +114,6 @@
           "base": 0,
           "decks": 4
         },
-        "#VJ9GP8UJ8": {
-          "name": "amj",
-          "base": 0,
-          "decks": 2
-        },
         "#8QPU20V2P": {
           "name": "Rasmus",
           "base": 0,
@@ -189,6 +179,11 @@
           "base": 0,
           "decks": 4
         },
+        "#VJ9GP8UJ8": {
+          "name": "amj",
+          "base": 0,
+          "decks": 4
+        },
         "#QJ920VG2C": {
           "name": "isak",
           "base": 0,
@@ -201,6 +196,11 @@
         },
         "#UVJU8Q90V": {
           "name": "WilliR5",
+          "base": 0,
+          "decks": 4
+        },
+        "#V882JC088": {
+          "name": "Teddaren",
           "base": 0,
           "decks": 4
         },

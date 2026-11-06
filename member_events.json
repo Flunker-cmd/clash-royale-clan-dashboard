@@ -2,6 +2,13 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-06T18:07:56Z",
+      "type": "left",
+      "tag": "#2JRJY2LQR",
+      "name": "skogsankan",
+      "role": "member"
+    },
+    {
       "date": "2026-11-06T11:11:36Z",
       "type": "demoted",
       "tag": "#2L8V08QLL",

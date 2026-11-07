@@ -262,7 +262,7 @@
       }
     },
     "2": {
-      "updated": "2026-11-06T23:18:39Z",
+      "updated": "2026-11-07T02:56:43Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -341,11 +341,6 @@
         },
         "#2G9PV0LQ0": {
           "name": "Thabet",
-          "base": 4,
-          "decks": 0
-        },
-        "#8VV8GGGPY": {
-          "name": "Leo",
           "base": 4,
           "decks": 0
         },
@@ -431,6 +426,11 @@
         },
         "#UUGUL0JJR": {
           "name": "Padlarn",
+          "base": 4,
+          "decks": 4
+        },
+        "#8VV8GGGPY": {
+          "name": "Leo",
           "base": 4,
           "decks": 4
         },

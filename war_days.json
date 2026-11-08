@@ -532,7 +532,7 @@
       }
     },
     "3": {
-      "updated": "2026-11-08T00:47:42Z",
+      "updated": "2026-11-08T07:31:50Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -604,21 +604,6 @@
           "base": 8,
           "decks": 4
         },
-        "#GYJVQYR": {
-          "name": "Adam",
-          "base": 8,
-          "decks": 0
-        },
-        "#2G9PV0LQ0": {
-          "name": "Thabet",
-          "base": 8,
-          "decks": 0
-        },
-        "#8UPLQ90YQ": {
-          "name": "Viggen\\\\",
-          "base": 8,
-          "decks": 0
-        },
         "#2L8V08QLL": {
           "name": "Bossebus123",
           "base": 3,
@@ -659,11 +644,6 @@
           "base": 8,
           "decks": 4
         },
-        "#CQCUPGGG": {
-          "name": "Bjögga",
-          "base": 8,
-          "decks": 0
-        },
         "#8CVLPV9YR": {
           "name": "Piggelin",
           "base": 8,
@@ -684,6 +664,16 @@
           "base": 8,
           "decks": 4
         },
+        "#2G9PV0LQ0": {
+          "name": "Thabet",
+          "base": 8,
+          "decks": 4
+        },
+        "#GYJVQYR": {
+          "name": "Adam",
+          "base": 8,
+          "decks": 4
+        },
         "#YPCURPPY2": {
           "name": "BullyMeILLc|_|M",
           "base": 7,
@@ -699,18 +689,13 @@
           "base": 8,
           "decks": 4
         },
-        "#V882JC088": {
-          "name": "Teddaren",
-          "base": 8,
-          "decks": 3
-        },
-        "#J2R9RRRG": {
-          "name": "N3lson",
-          "base": 8,
-          "decks": 3
-        },
         "#U2YJV2R2G": {
           "name": "Hejhadi1",
+          "base": 8,
+          "decks": 4
+        },
+        "#8UPLQ90YQ": {
+          "name": "Viggen\\\\",
           "base": 8,
           "decks": 4
         },
@@ -721,6 +706,11 @@
         },
         "#PPUUULVU2": {
           "name": "Julia",
+          "base": 8,
+          "decks": 4
+        },
+        "#J2R9RRRG": {
+          "name": "N3lson",
           "base": 8,
           "decks": 4
         },
@@ -744,6 +734,11 @@
           "base": 8,
           "decks": 4
         },
+        "#V882JC088": {
+          "name": "Teddaren",
+          "base": 8,
+          "decks": 4
+        },
         "#8VV8GGGPY": {
           "name": "Leo",
           "base": 8,
@@ -756,6 +751,11 @@
         },
         "#CVGCRRCR2": {
           "name": "Nnea",
+          "base": 8,
+          "decks": 4
+        },
+        "#CQCUPGGG": {
+          "name": "Bjögga",
           "base": 8,
           "decks": 4
         },

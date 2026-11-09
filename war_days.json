@@ -802,7 +802,7 @@
       }
     },
     "4": {
-      "updated": "2026-11-08T20:37:46Z",
+      "updated": "2026-11-09T01:01:50Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -849,6 +849,11 @@
           "base": 0,
           "decks": 0
         },
+        "#VGL2L00QG": {
+          "name": "pz",
+          "base": 0,
+          "decks": 0
+        },
         "#2092U9YV9P": {
           "name": "okay_pal",
           "base": 0,
@@ -859,15 +864,15 @@
           "base": 0,
           "decks": 0
         },
-        "#CPCLGY0R": {
-          "name": "AMAMAMAMEOJ",
-          "base": 4,
-          "decks": 0
-        },
         "#CU8P0GU90": {
           "name": "Yari_Pro",
           "base": 3,
           "decks": 0
+        },
+        "#J0JC0L0CR": {
+          "name": "chost_man10",
+          "base": 0,
+          "decks": 4
         },
         "#9V2JU28JR": {
           "name": "2IQPLAYER",
@@ -879,30 +884,20 @@
           "base": 8,
           "decks": 0
         },
-        "#UCCL9GC9R": {
-          "name": "Das Meer",
-          "base": 8,
-          "decks": 2
-        },
-        "#QJ920VG2C": {
-          "name": "isak",
-          "base": 9,
-          "decks": 0
-        },
-        "#VGPYCR0JG": {
-          "name": "Rasse08;)",
-          "base": 10,
-          "decks": 0
+        "#CPCLGY0R": {
+          "name": "AMAMAMAMEOJ",
+          "base": 4,
+          "decks": 4
         },
         "#8UC8L0PY0": {
           "name": "DonaldDuck69",
           "base": 12,
           "decks": 4
         },
-        "#P8LGPV0P": {
-          "name": "oscar",
-          "base": 12,
-          "decks": 0
+        "#UCCL9GC9R": {
+          "name": "Das Meer",
+          "base": 8,
+          "decks": 4
         },
         "#2L8V08QLL": {
           "name": "Bossebus123",
@@ -911,11 +906,6 @@
         },
         "#98YUVC8": {
           "name": "Oskar :)",
-          "base": 12,
-          "decks": 0
-        },
-        "#2G9PV0LQ0": {
-          "name": "Thabet",
           "base": 12,
           "decks": 0
         },
@@ -944,20 +934,25 @@
           "base": 12,
           "decks": 0
         },
+        "#VGPYCR0JG": {
+          "name": "Rasse08;)",
+          "base": 10,
+          "decks": 4
+        },
+        "#QJ920VG2C": {
+          "name": "isak",
+          "base": 9,
+          "decks": 4
+        },
         "#20929PYR0": {
           "name": "Reavy",
           "base": 10,
           "decks": 4
         },
-        "#YPCURPPY2": {
-          "name": "BullyMeILLc|_|M",
-          "base": 11,
-          "decks": 3
-        },
-        "#CVGCRRCR2": {
-          "name": "Nnea",
+        "#P8LGPV0P": {
+          "name": "oscar",
           "base": 12,
-          "decks": 0
+          "decks": 4
         },
         "#8QPU20V2P": {
           "name": "Rasmus",
@@ -967,6 +962,11 @@
         "#20CRLUGCP9": {
           "name": "BjalkenX",
           "base": 12,
+          "decks": 4
+        },
+        "#YPCURPPY2": {
+          "name": "BullyMeILLc|_|M",
+          "base": 11,
           "decks": 4
         },
         "#J2R9RRRG": {
@@ -979,11 +979,6 @@
           "base": 12,
           "decks": 4
         },
-        "#URUQ09LVG": {
-          "name": "wisely",
-          "base": 12,
-          "decks": 0
-        },
         "#P0CV8LUY": {
           "name": "Gideon",
           "base": 12,
@@ -991,6 +986,11 @@
         },
         "#V882JC088": {
           "name": "Teddaren",
+          "base": 12,
+          "decks": 4
+        },
+        "#2G9PV0LQ0": {
+          "name": "Thabet",
           "base": 12,
           "decks": 4
         },
@@ -1034,6 +1034,11 @@
           "base": 12,
           "decks": 4
         },
+        "#CVGCRRCR2": {
+          "name": "Nnea",
+          "base": 12,
+          "decks": 4
+        },
         "#20VYLRPCYG": {
           "name": "OG27",
           "base": 12,
@@ -1066,6 +1071,11 @@
         },
         "#CQCUPGGG": {
           "name": "Bjögga",
+          "base": 12,
+          "decks": 4
+        },
+        "#URUQ09LVG": {
+          "name": "wisely",
           "base": 12,
           "decks": 4
         },

@@ -917,7 +917,7 @@
         "#2QL8VQRUP": {
           "name": "The Viking",
           "base": 12,
-          "decks": 3
+          "decks": 4
         },
         "#VCYPG98JG": {
           "name": "OGDUNEDAN",
@@ -1096,5 +1096,7 @@
         }
       }
     }
-  }
+  },
+  "finished": true,
+  "seasonId": 138
 }

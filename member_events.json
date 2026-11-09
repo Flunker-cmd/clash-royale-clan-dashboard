@@ -2,6 +2,44 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-09T18:56:20Z",
+      "type": "joined",
+      "tag": "#VLGLYPQYC",
+      "name": "Teddol",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-09T18:56:20Z",
+      "type": "joined",
+      "tag": "#VLYCQG8JQ",
+      "name": "hydra",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-09T18:56:20Z",
+      "type": "promoted",
+      "tag": "#20CRLUGCP9",
+      "name": "BjalkenX",
+      "from": "member",
+      "to": "elder"
+    },
+    {
+      "date": "2026-11-09T18:56:20Z",
+      "type": "promoted",
+      "tag": "#VCYPG98JG",
+      "name": "OGDUNEDAN",
+      "from": "member",
+      "to": "elder"
+    },
+    {
+      "date": "2026-11-09T18:56:20Z",
+      "type": "promoted",
+      "tag": "#UUGUL0JJR",
+      "name": "Padlarn",
+      "from": "member",
+      "to": "elder"
+    },
+    {
       "date": "2026-11-09T15:42:15Z",
       "type": "joined",
       "tag": "#UY9Y29RY0",

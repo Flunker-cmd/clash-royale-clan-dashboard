@@ -1,26 +1,30 @@
 {
-  "#RUV8V8GVR": {
-    "name": "MEGABAENIS",
+  "#CQCUPGGG": {
+    "name": "Bjögga",
+    "role": "elder"
+  },
+  "#8VV8GGGPY": {
+    "name": "Leo",
     "role": "elder"
   },
   "#UVJU8Q90V": {
     "name": "WilliR5",
     "role": "elder"
   },
-  "#G0JQ08299": {
-    "name": "Tren 9",
-    "role": "elder"
-  },
   "#VGPYCR0JG": {
     "name": "Rasse08;)",
     "role": "member"
   },
-  "#98YUVC8": {
-    "name": "Oskar :)",
+  "#G0JQ08299": {
+    "name": "Tren 9",
     "role": "elder"
   },
-  "#CQCUPGGG": {
-    "name": "Bjögga",
+  "#RUV8V8GVR": {
+    "name": "MEGABAENIS",
+    "role": "elder"
+  },
+  "#98YUVC8": {
+    "name": "Oskar :)",
     "role": "elder"
   },
   "#PPUUULVU2": {
@@ -49,10 +53,6 @@
   },
   "#P0CV8LUY": {
     "name": "Gideon",
-    "role": "elder"
-  },
-  "#8VV8GGGPY": {
-    "name": "Leo",
     "role": "elder"
   },
   "#QJ920VG2C": {
@@ -105,7 +105,7 @@
   },
   "#UUGUL0JJR": {
     "name": "Padlarn",
-    "role": "member"
+    "role": "elder"
   },
   "#PPJPY09GP": {
     "name": "BjalkenGG",
@@ -151,6 +151,10 @@
     "name": "The Viking",
     "role": "member"
   },
+  "#VLYCQG8JQ": {
+    "name": "hydra",
+    "role": "member"
+  },
   "#20U2C9QLGG": {
     "name": "Wader",
     "role": "elder"
@@ -166,6 +170,10 @@
   "#CC0JPP0UL": {
     "name": "slinky",
     "role": "elder"
+  },
+  "#VLGLYPQYC": {
+    "name": "Teddol",
+    "role": "member"
   },
   "#CU8P0GU90": {
     "name": "Yari_Pro",
@@ -185,10 +193,10 @@
   },
   "#VCYPG98JG": {
     "name": "OGDUNEDAN",
-    "role": "member"
+    "role": "elder"
   },
   "#20CRLUGCP9": {
     "name": "BjalkenX",
-    "role": "member"
+    "role": "elder"
   }
 }

@@ -802,7 +802,7 @@
       }
     },
     "4": {
-      "updated": "2026-11-09T01:01:50Z",
+      "updated": "2026-11-09T08:08:57Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -864,15 +864,15 @@
           "base": 0,
           "decks": 0
         },
-        "#CU8P0GU90": {
-          "name": "Yari_Pro",
-          "base": 3,
-          "decks": 0
-        },
         "#J0JC0L0CR": {
           "name": "chost_man10",
           "base": 0,
           "decks": 4
+        },
+        "#CU8P0GU90": {
+          "name": "Yari_Pro",
+          "base": 3,
+          "decks": 1
         },
         "#9V2JU28JR": {
           "name": "2IQPLAYER",
@@ -928,11 +928,6 @@
           "name": "iron m",
           "base": 8,
           "decks": 4
-        },
-        "#8UPLQ90YQ": {
-          "name": "Viggen\\\\",
-          "base": 12,
-          "decks": 0
         },
         "#VGPYCR0JG": {
           "name": "Rasse08;)",
@@ -994,11 +989,6 @@
           "base": 12,
           "decks": 4
         },
-        "#8CVLPV9YR": {
-          "name": "Piggelin",
-          "base": 12,
-          "decks": 0
-        },
         "#VJ9GP8UJ8": {
           "name": "amj",
           "base": 12,
@@ -1014,10 +1004,10 @@
           "base": 12,
           "decks": 4
         },
-        "#CVYL9CR92": {
-          "name": "A19",
+        "#8UPLQ90YQ": {
+          "name": "Viggen\\\\",
           "base": 12,
-          "decks": 3
+          "decks": 4
         },
         "#CC0JPP0UL": {
           "name": "slinky",
@@ -1036,6 +1026,11 @@
         },
         "#CVGCRRCR2": {
           "name": "Nnea",
+          "base": 12,
+          "decks": 4
+        },
+        "#CVYL9CR92": {
+          "name": "A19",
           "base": 12,
           "decks": 4
         },
@@ -1076,6 +1071,11 @@
         },
         "#URUQ09LVG": {
           "name": "wisely",
+          "base": 12,
+          "decks": 4
+        },
+        "#8CVLPV9YR": {
+          "name": "Piggelin",
           "base": 12,
           "decks": 4
         },

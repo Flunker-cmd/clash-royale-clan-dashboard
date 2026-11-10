@@ -4,7 +4,7 @@
   "type": "open",
   "description": "Vi kör Clan Wars, joina inte om du inte spelar CW torsdag till Söndag. vi är en Aktiv Klan! Code: RoyaleAPI",
   "badgeId": 16000062,
-  "clanScore": 132645,
+  "clanScore": 132177,
   "clanWarTrophies": 3433,
   "location": {
     "id": 57000225,
@@ -13,17 +13,17 @@
     "countryCode": "SE"
   },
   "requiredTrophies": 7000,
-  "donationsPerWeek": 3105,
+  "donationsPerWeek": 3501,
   "clanChestStatus": "inactive",
   "clanChestLevel": 1,
   "clanChestMaxLevel": 0,
-  "members": 50,
+  "members": 49,
   "memberList": [
     {
-      "tag": "#2L8V08QLL",
-      "name": "Bossebus123",
+      "tag": "#VGPYCR0JG",
+      "name": "Rasse08;)",
       "role": "member",
-      "lastSeen": "20261110T175647.000Z",
+      "lastSeen": "20261110T224338.000Z",
       "expLevel": 0,
       "trophies": 14000,
       "arena": {
@@ -32,16 +32,16 @@
         "rawName": "Arena_L18"
       },
       "clanRank": 1,
-      "previousClanRank": 7,
-      "donations": 98,
-      "donationsReceived": 0,
+      "previousClanRank": 4,
+      "donations": 16,
+      "donationsReceived": 160,
       "clanChestPoints": 0
     },
     {
-      "tag": "#CJLPGJ2CY",
-      "name": "BRUNO",
+      "tag": "#G0JQ08299",
+      "name": "Tren 9",
       "role": "elder",
-      "lastSeen": "20261110T175400.000Z",
+      "lastSeen": "20261110T212621.000Z",
       "expLevel": 0,
       "trophies": 14000,
       "arena": {
@@ -50,9 +50,117 @@
         "rawName": "Arena_L18"
       },
       "clanRank": 2,
+      "previousClanRank": 10,
+      "donations": 62,
+      "donationsReceived": 0,
+      "clanChestPoints": 0
+    },
+    {
+      "tag": "#2QGGPPYCP",
+      "name": "herman@:com",
+      "role": "elder",
+      "lastSeen": "20261110T204604.000Z",
+      "expLevel": 0,
+      "trophies": 14000,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 3,
+      "previousClanRank": 14,
+      "donations": 133,
+      "donationsReceived": 0,
+      "clanChestPoints": 0
+    },
+    {
+      "tag": "#PPUUULVU2",
+      "name": "Julia",
+      "role": "elder",
+      "lastSeen": "20261110T204021.000Z",
+      "expLevel": 0,
+      "trophies": 14000,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 4,
+      "previousClanRank": 6,
+      "donations": 70,
+      "donationsReceived": 160,
+      "clanChestPoints": 0
+    },
+    {
+      "tag": "#2L8V08QLL",
+      "name": "Bossebus123",
+      "role": "member",
+      "lastSeen": "20261110T200914.000Z",
+      "expLevel": 0,
+      "trophies": 14000,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 5,
+      "previousClanRank": 7,
+      "donations": 132,
+      "donationsReceived": 0,
+      "clanChestPoints": 0
+    },
+    {
+      "tag": "#CJLPGJ2CY",
+      "name": "BRUNO",
+      "role": "elder",
+      "lastSeen": "20261110T195323.000Z",
+      "expLevel": 0,
+      "trophies": 14000,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 6,
       "previousClanRank": 1,
       "donations": 0,
       "donationsReceived": 0,
+      "clanChestPoints": 0
+    },
+    {
+      "tag": "#8VV8GGGPY",
+      "name": "Leo",
+      "role": "elder",
+      "lastSeen": "20261110T194520.000Z",
+      "expLevel": 0,
+      "trophies": 14000,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 7,
+      "previousClanRank": 8,
+      "donations": 26,
+      "donationsReceived": 80,
+      "clanChestPoints": 0
+    },
+    {
+      "tag": "#CQCUPGGG",
+      "name": "Bjögga",
+      "role": "elder",
+      "lastSeen": "20261110T185229.000Z",
+      "expLevel": 0,
+      "trophies": 14000,
+      "arena": {
+        "id": 54000144,
+        "name": "Spirit Square",
+        "rawName": "Arena_L18"
+      },
+      "clanRank": 8,
+      "previousClanRank": 2,
+      "donations": 184,
+      "donationsReceived": 120,
       "clanChestPoints": 0
     },
     {
@@ -67,28 +175,10 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 3,
+      "clanRank": 9,
       "previousClanRank": 5,
       "donations": 142,
       "donationsReceived": 0,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#VGPYCR0JG",
-      "name": "Rasse08;)",
-      "role": "member",
-      "lastSeen": "20261110T164314.000Z",
-      "expLevel": 0,
-      "trophies": 14000,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 4,
-      "previousClanRank": 4,
-      "donations": 8,
-      "donationsReceived": 160,
       "clanChestPoints": 0
     },
     {
@@ -103,46 +193,10 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 5,
+      "clanRank": 10,
       "previousClanRank": 9,
       "donations": 82,
       "donationsReceived": 80,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#CQCUPGGG",
-      "name": "Bjögga",
-      "role": "elder",
-      "lastSeen": "20261110T141918.000Z",
-      "expLevel": 0,
-      "trophies": 14000,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 6,
-      "previousClanRank": 2,
-      "donations": 184,
-      "donationsReceived": 120,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#PPUUULVU2",
-      "name": "Julia",
-      "role": "elder",
-      "lastSeen": "20261110T133142.000Z",
-      "expLevel": 0,
-      "trophies": 14000,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 7,
-      "previousClanRank": 6,
-      "donations": 60,
-      "donationsReceived": 120,
       "clanChestPoints": 0
     },
     {
@@ -157,28 +211,10 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 8,
+      "clanRank": 11,
       "previousClanRank": 13,
       "donations": 106,
       "donationsReceived": 80,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#2QGGPPYCP",
-      "name": "herman@:com",
-      "role": "elder",
-      "lastSeen": "20261110T132204.000Z",
-      "expLevel": 0,
-      "trophies": 14000,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 9,
-      "previousClanRank": 14,
-      "donations": 126,
-      "donationsReceived": 0,
       "clanChestPoints": 0
     },
     {
@@ -193,7 +229,7 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 10,
+      "clanRank": 12,
       "previousClanRank": 11,
       "donations": 0,
       "donationsReceived": 0,
@@ -211,7 +247,7 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 11,
+      "clanRank": 13,
       "previousClanRank": 3,
       "donations": 38,
       "donationsReceived": 120,
@@ -229,55 +265,19 @@
         "name": "Spirit Square",
         "rawName": "Arena_L18"
       },
-      "clanRank": 12,
+      "clanRank": 14,
       "previousClanRank": 12,
       "donations": 36,
       "donationsReceived": 80,
       "clanChestPoints": 0
     },
     {
-      "tag": "#G0JQ08299",
-      "name": "Tren 9",
-      "role": "elder",
-      "lastSeen": "20261110T101808.000Z",
-      "expLevel": 0,
-      "trophies": 14000,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 13,
-      "previousClanRank": 10,
-      "donations": 62,
-      "donationsReceived": 0,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#8VV8GGGPY",
-      "name": "Leo",
-      "role": "elder",
-      "lastSeen": "20261109T204540.000Z",
-      "expLevel": 0,
-      "trophies": 14000,
-      "arena": {
-        "id": 54000144,
-        "name": "Spirit Square",
-        "rawName": "Arena_L18"
-      },
-      "clanRank": 14,
-      "previousClanRank": 8,
-      "donations": 8,
-      "donationsReceived": 40,
-      "clanChestPoints": 0
-    },
-    {
       "tag": "#QJ920VG2C",
       "name": "isak",
       "role": "member",
-      "lastSeen": "20261110T135144.000Z",
+      "lastSeen": "20261110T223138.000Z",
       "expLevel": 0,
-      "trophies": 13844,
+      "trophies": 13782,
       "arena": {
         "id": 54000144,
         "name": "Spirit Square",
@@ -285,15 +285,15 @@
       },
       "clanRank": 15,
       "previousClanRank": 15,
-      "donations": 74,
-      "donationsReceived": 127,
+      "donations": 107,
+      "donationsReceived": 167,
       "clanChestPoints": 0
     },
     {
       "tag": "#PRVR9J9",
       "name": "Limpan",
       "role": "elder",
-      "lastSeen": "20261110T161607.000Z",
+      "lastSeen": "20261110T200531.000Z",
       "expLevel": 0,
       "trophies": 13737,
       "arena": {
@@ -303,7 +303,7 @@
       },
       "clanRank": 16,
       "previousClanRank": 16,
-      "donations": 26,
+      "donations": 43,
       "donationsReceived": 80,
       "clanChestPoints": 0
     },
@@ -311,7 +311,7 @@
       "tag": "#CVYL9CR92",
       "name": "A19",
       "role": "elder",
-      "lastSeen": "20261110T164708.000Z",
+      "lastSeen": "20261110T183545.000Z",
       "expLevel": 0,
       "trophies": 13709,
       "arena": {
@@ -321,7 +321,7 @@
       },
       "clanRank": 17,
       "previousClanRank": 17,
-      "donations": 42,
+      "donations": 52,
       "donationsReceived": 160,
       "clanChestPoints": 0
     },
@@ -347,7 +347,7 @@
       "tag": "#VJ9GP8UJ8",
       "name": "amj",
       "role": "elder",
-      "lastSeen": "20261110T161735.000Z",
+      "lastSeen": "20261110T231426.000Z",
       "expLevel": 0,
       "trophies": 13159,
       "arena": {
@@ -357,7 +357,7 @@
       },
       "clanRank": 19,
       "previousClanRank": 19,
-      "donations": 68,
+      "donations": 86,
       "donationsReceived": 40,
       "clanChestPoints": 0
     },
@@ -365,7 +365,7 @@
       "tag": "#YGPJ9PP9Y",
       "name": "kingmeng",
       "role": "member",
-      "lastSeen": "20261110T165250.000Z",
+      "lastSeen": "20261110T184238.000Z",
       "expLevel": 0,
       "trophies": 13158,
       "arena": {
@@ -383,9 +383,9 @@
       "tag": "#20VYLRPCYG",
       "name": "OG27",
       "role": "coLeader",
-      "lastSeen": "20261110T164951.000Z",
+      "lastSeen": "20261110T233045.000Z",
       "expLevel": 0,
-      "trophies": 12915,
+      "trophies": 12912,
       "arena": {
         "id": 54000142,
         "name": "Ultimate Clash Pit",
@@ -393,7 +393,7 @@
       },
       "clanRank": 21,
       "previousClanRank": 21,
-      "donations": 176,
+      "donations": 184,
       "donationsReceived": 160,
       "clanChestPoints": 0
     },
@@ -401,7 +401,7 @@
       "tag": "#9V2JU28JR",
       "name": "2IQPLAYER",
       "role": "member",
-      "lastSeen": "20261108T131612.000Z",
+      "lastSeen": "20261110T182014.000Z",
       "expLevel": 0,
       "trophies": 12710,
       "arena": {
@@ -434,46 +434,46 @@
       "clanChestPoints": 0
     },
     {
-      "tag": "#URUQ09LVG",
-      "name": "wisely",
-      "role": "coLeader",
-      "lastSeen": "20261110T172357.000Z",
+      "tag": "#P2VVLPGUJ",
+      "name": "Gabro",
+      "role": "elder",
+      "lastSeen": "20261110T225020.000Z",
       "expLevel": 0,
-      "trophies": 12595,
+      "trophies": 12626,
       "arena": {
         "id": 54000142,
         "name": "Ultimate Clash Pit",
         "rawName": "Arena_L16"
       },
       "clanRank": 24,
-      "previousClanRank": 25,
-      "donations": 146,
-      "donationsReceived": 180,
+      "previousClanRank": 24,
+      "donations": 230,
+      "donationsReceived": 0,
       "clanChestPoints": 0
     },
     {
-      "tag": "#P2VVLPGUJ",
-      "name": "Gabro",
-      "role": "elder",
-      "lastSeen": "20261110T162445.000Z",
+      "tag": "#URUQ09LVG",
+      "name": "wisely",
+      "role": "coLeader",
+      "lastSeen": "20261110T225349.000Z",
       "expLevel": 0,
-      "trophies": 12589,
+      "trophies": 12596,
       "arena": {
         "id": 54000142,
         "name": "Ultimate Clash Pit",
         "rawName": "Arena_L16"
       },
       "clanRank": 25,
-      "previousClanRank": 24,
-      "donations": 194,
-      "donationsReceived": 0,
+      "previousClanRank": 25,
+      "donations": 154,
+      "donationsReceived": 200,
       "clanChestPoints": 0
     },
     {
       "tag": "#V882JC088",
       "name": "Teddaren",
       "role": "elder",
-      "lastSeen": "20261110T172752.000Z",
+      "lastSeen": "20261110T232730.000Z",
       "expLevel": 0,
       "trophies": 12500,
       "arena": {
@@ -491,9 +491,9 @@
       "tag": "#UUGUL0JJR",
       "name": "Padlarn",
       "role": "elder",
-      "lastSeen": "20261110T075138.000Z",
+      "lastSeen": "20261110T212242.000Z",
       "expLevel": 0,
-      "trophies": 12238,
+      "trophies": 12210,
       "arena": {
         "id": 54000141,
         "name": "Magic Academy",
@@ -501,17 +501,17 @@
       },
       "clanRank": 27,
       "previousClanRank": 27,
-      "donations": 110,
-      "donationsReceived": 120,
+      "donations": 120,
+      "donationsReceived": 160,
       "clanChestPoints": 0
     },
     {
       "tag": "#PPJPY09GP",
       "name": "BjalkenGG",
       "role": "coLeader",
-      "lastSeen": "20261110T070349.000Z",
+      "lastSeen": "20261110T210040.000Z",
       "expLevel": 0,
-      "trophies": 12145,
+      "trophies": 12117,
       "arena": {
         "id": 54000141,
         "name": "Magic Academy",
@@ -519,8 +519,8 @@
       },
       "clanRank": 28,
       "previousClanRank": 28,
-      "donations": 160,
-      "donationsReceived": 190,
+      "donations": 202,
+      "donationsReceived": 230,
       "clanChestPoints": 0
     },
     {
@@ -574,42 +574,24 @@
       "clanRank": 31,
       "previousClanRank": 31,
       "donations": 124,
-      "donationsReceived": 104,
-      "clanChestPoints": 0
-    },
-    {
-      "tag": "#CPCLGY0R",
-      "name": "AMAMAMAMEOJ",
-      "role": "member",
-      "lastSeen": "20261110T034259.000Z",
-      "expLevel": 0,
-      "trophies": 11630,
-      "arena": {
-        "id": 54000132,
-        "name": "Summit of Heroes",
-        "rawName": "Arena_L14"
-      },
-      "clanRank": 32,
-      "previousClanRank": 32,
-      "donations": 60,
-      "donationsReceived": 40,
+      "donationsReceived": 120,
       "clanChestPoints": 0
     },
     {
       "tag": "#J0JC0L0CR",
       "name": "chost_man10",
       "role": "member",
-      "lastSeen": "20261110T140357.000Z",
+      "lastSeen": "20261110T203235.000Z",
       "expLevel": 0,
-      "trophies": 11562,
+      "trophies": 11589,
       "arena": {
         "id": 54000132,
         "name": "Summit of Heroes",
         "rawName": "Arena_L14"
       },
-      "clanRank": 33,
+      "clanRank": 32,
       "previousClanRank": 33,
-      "donations": 9,
+      "donations": 17,
       "donationsReceived": 0,
       "clanChestPoints": 0
     },
@@ -617,7 +599,7 @@
       "tag": "#2JC8C9VVP",
       "name": "iron m",
       "role": "elder",
-      "lastSeen": "20261110T163509.000Z",
+      "lastSeen": "20261110T203823.000Z",
       "expLevel": 0,
       "trophies": 11472,
       "arena": {
@@ -625,17 +607,17 @@
         "name": "Musketeer Street",
         "rawName": "Arena_L13"
       },
-      "clanRank": 34,
+      "clanRank": 33,
       "previousClanRank": 34,
-      "donations": 92,
-      "donationsReceived": 200,
+      "donations": 102,
+      "donationsReceived": 240,
       "clanChestPoints": 0
     },
     {
       "tag": "#8UC8L0PY0",
       "name": "DonaldDuck69",
       "role": "member",
-      "lastSeen": "20261110T044106.000Z",
+      "lastSeen": "20261110T224533.000Z",
       "expLevel": 0,
       "trophies": 11270,
       "arena": {
@@ -643,7 +625,7 @@
         "name": "Musketeer Street",
         "rawName": "Arena_L13"
       },
-      "clanRank": 35,
+      "clanRank": 34,
       "previousClanRank": 35,
       "donations": 28,
       "donationsReceived": 40,
@@ -653,7 +635,7 @@
       "tag": "#P8LGPV0P",
       "name": "oscar",
       "role": "member",
-      "lastSeen": "20261110T170622.000Z",
+      "lastSeen": "20261110T201905.000Z",
       "expLevel": 0,
       "trophies": 11201,
       "arena": {
@@ -661,7 +643,7 @@
         "name": "Musketeer Street",
         "rawName": "Arena_L13"
       },
-      "clanRank": 36,
+      "clanRank": 35,
       "previousClanRank": 36,
       "donations": 150,
       "donationsReceived": 0,
@@ -671,7 +653,7 @@
       "tag": "#J2R9RRRG",
       "name": "N3lson",
       "role": "leader",
-      "lastSeen": "20261110T165524.000Z",
+      "lastSeen": "20261110T200207.000Z",
       "expLevel": 0,
       "trophies": 11000,
       "arena": {
@@ -679,27 +661,27 @@
         "name": "Musketeer Street",
         "rawName": "Arena_L13"
       },
-      "clanRank": 37,
+      "clanRank": 36,
       "previousClanRank": 37,
-      "donations": 108,
-      "donationsReceived": 160,
+      "donations": 126,
+      "donationsReceived": 200,
       "clanChestPoints": 0
     },
     {
       "tag": "#2QL8VQRUP",
       "name": "The Viking",
       "role": "member",
-      "lastSeen": "20261110T145836.000Z",
+      "lastSeen": "20261110T224013.000Z",
       "expLevel": 0,
-      "trophies": 10796,
+      "trophies": 10677,
       "arena": {
         "id": 54000130,
         "name": "Royal Road",
         "rawName": "Arena_L12"
       },
-      "clanRank": 38,
+      "clanRank": 37,
       "previousClanRank": 38,
-      "donations": 24,
+      "donations": 27,
       "donationsReceived": 80,
       "clanChestPoints": 0
     },
@@ -707,35 +689,35 @@
       "tag": "#VLYCQG8JQ",
       "name": "hydra",
       "role": "member",
-      "lastSeen": "20261109T185158.000Z",
+      "lastSeen": "20261110T231004.000Z",
       "expLevel": 0,
-      "trophies": 10508,
+      "trophies": 10540,
       "arena": {
         "id": 54000130,
         "name": "Royal Road",
         "rawName": "Arena_L12"
       },
-      "clanRank": 39,
+      "clanRank": 38,
       "previousClanRank": 39,
-      "donations": 0,
-      "donationsReceived": 40,
+      "donations": 36,
+      "donationsReceived": 80,
       "clanChestPoints": 0
     },
     {
       "tag": "#20U2C9QLGG",
       "name": "Wader",
       "role": "elder",
-      "lastSeen": "20261110T174511.000Z",
+      "lastSeen": "20261110T185112.000Z",
       "expLevel": 0,
-      "trophies": 10295,
+      "trophies": 10327,
       "arena": {
         "id": 54000117,
         "name": "Lumberlove Cabin",
         "rawName": "Arena_L11"
       },
-      "clanRank": 40,
+      "clanRank": 39,
       "previousClanRank": 40,
-      "donations": 84,
+      "donations": 92,
       "donationsReceived": 0,
       "clanChestPoints": 0
     },
@@ -743,7 +725,7 @@
       "tag": "#CVGCRRCR2",
       "name": "Nnea",
       "role": "elder",
-      "lastSeen": "20261110T121030.000Z",
+      "lastSeen": "20261110T195626.000Z",
       "expLevel": 0,
       "trophies": 10211,
       "arena": {
@@ -751,17 +733,17 @@
         "name": "Lumberlove Cabin",
         "rawName": "Arena_L11"
       },
-      "clanRank": 41,
+      "clanRank": 40,
       "previousClanRank": 41,
-      "donations": 118,
-      "donationsReceived": 80,
+      "donations": 154,
+      "donationsReceived": 120,
       "clanChestPoints": 0
     },
     {
       "tag": "#GYJVQYR",
       "name": "Adam",
       "role": "elder",
-      "lastSeen": "20261109T163756.000Z",
+      "lastSeen": "20261110T212017.000Z",
       "expLevel": 0,
       "trophies": 10152,
       "arena": {
@@ -769,7 +751,7 @@
         "name": "Lumberlove Cabin",
         "rawName": "Arena_L11"
       },
-      "clanRank": 42,
+      "clanRank": 41,
       "previousClanRank": 42,
       "donations": 0,
       "donationsReceived": 0,
@@ -779,15 +761,15 @@
       "tag": "#CC0JPP0UL",
       "name": "slinky",
       "role": "elder",
-      "lastSeen": "20261110T110721.000Z",
+      "lastSeen": "20261110T215520.000Z",
       "expLevel": 0,
-      "trophies": 9643,
+      "trophies": 9645,
       "arena": {
         "id": 54000031,
         "name": "Legendary Arena",
         "rawName": "Arena_L10"
       },
-      "clanRank": 43,
+      "clanRank": 42,
       "previousClanRank": 43,
       "donations": 0,
       "donationsReceived": 0,
@@ -805,7 +787,7 @@
         "name": "Valkalla",
         "rawName": "Arena_L9"
       },
-      "clanRank": 44,
+      "clanRank": 43,
       "previousClanRank": 44,
       "donations": 10,
       "donationsReceived": 40,
@@ -823,7 +805,7 @@
         "name": "PANCAKES!",
         "rawName": "Arena_L8"
       },
-      "clanRank": 45,
+      "clanRank": 44,
       "previousClanRank": 45,
       "donations": 20,
       "donationsReceived": 0,
@@ -841,7 +823,7 @@
         "name": "PANCAKES!",
         "rawName": "Arena_L8"
       },
-      "clanRank": 46,
+      "clanRank": 45,
       "previousClanRank": 46,
       "donations": 0,
       "donationsReceived": 0,
@@ -851,15 +833,15 @@
       "tag": "#CQCGRC90R",
       "name": "Trash can",
       "role": "member",
-      "lastSeen": "20261110T175247.000Z",
+      "lastSeen": "20261110T202740.000Z",
       "expLevel": 0,
-      "trophies": 8364,
+      "trophies": 8361,
       "arena": {
         "id": 54000018,
         "name": "Clash Fest",
         "rawName": "Arena_L7"
       },
-      "clanRank": 47,
+      "clanRank": 46,
       "previousClanRank": 47,
       "donations": 0,
       "donationsReceived": 0,
@@ -877,7 +859,7 @@
         "name": "Dragon Spa",
         "rawName": "Arena_L5"
       },
-      "clanRank": 48,
+      "clanRank": 47,
       "previousClanRank": 48,
       "donations": 0,
       "donationsReceived": 0,
@@ -887,7 +869,7 @@
       "tag": "#VCYPG98JG",
       "name": "OGDUNEDAN",
       "role": "elder",
-      "lastSeen": "20261110T165001.000Z",
+      "lastSeen": "20261110T233026.000Z",
       "expLevel": 0,
       "trophies": 4902,
       "arena": {
@@ -895,7 +877,7 @@
         "name": "Serenity Peak",
         "rawName": "Arena14"
       },
-      "clanRank": 49,
+      "clanRank": 48,
       "previousClanRank": 49,
       "donations": 31,
       "donationsReceived": 200,
@@ -905,7 +887,7 @@
       "tag": "#20CRLUGCP9",
       "name": "BjalkenX",
       "role": "elder",
-      "lastSeen": "20261109T203652.000Z",
+      "lastSeen": "20261110T204720.000Z",
       "expLevel": 0,
       "trophies": 2633,
       "arena": {
@@ -913,7 +895,7 @@
         "name": "Jungle Arena",
         "rawName": "Arena9"
       },
-      "clanRank": 50,
+      "clanRank": 49,
       "previousClanRank": 50,
       "donations": 21,
       "donationsReceived": 40,

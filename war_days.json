@@ -2,7 +2,7 @@
   "warKey": "1:10",
   "days": {
     "1": {
-      "updated": "2026-11-12T20:57:35Z",
+      "updated": "2026-11-13T01:58:14Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -16,11 +16,6 @@
         },
         "#UY9Y29RY0": {
           "name": "Luppen2005",
-          "base": 0,
-          "decks": 0
-        },
-        "#GYJVQYR": {
-          "name": "Adam",
           "base": 0,
           "decks": 0
         },
@@ -179,6 +174,11 @@
           "base": 0,
           "decks": 4
         },
+        "#GYJVQYR": {
+          "name": "Adam",
+          "base": 0,
+          "decks": 4
+        },
         "#VCYPG98JG": {
           "name": "OGDUNEDAN",
           "base": 0,
@@ -203,11 +203,6 @@
           "name": "Wader",
           "base": 0,
           "decks": 4
-        },
-        "#VJ9GP8UJ8": {
-          "name": "amj",
-          "base": 0,
-          "decks": 3
         },
         "#URUQ09LVG": {
           "name": "wisely",
@@ -276,6 +271,11 @@
         },
         "#PPUUULVU2": {
           "name": "Julia",
+          "base": 0,
+          "decks": 4
+        },
+        "#VJ9GP8UJ8": {
+          "name": "amj",
           "base": 0,
           "decks": 4
         },

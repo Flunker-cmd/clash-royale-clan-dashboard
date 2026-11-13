@@ -2,6 +2,34 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-13T17:53:51Z",
+      "type": "joined",
+      "tag": "#9CVQJ8QVQ",
+      "name": "MYSTOGAN",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-13T17:53:51Z",
+      "type": "left",
+      "tag": "#9V2JU28JR",
+      "name": "2IQPLAYER",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-13T17:53:51Z",
+      "type": "left",
+      "tag": "#VLGLYPQYC",
+      "name": "Teddol",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-13T17:53:51Z",
+      "type": "left",
+      "tag": "#CQCGRC90R",
+      "name": "Trash can",
+      "role": "member"
+    },
+    {
       "date": "2026-11-13T09:45:21Z",
       "type": "left",
       "tag": "#CU8P0GU90",

@@ -2,6 +2,20 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-14T14:20:24Z",
+      "type": "joined",
+      "tag": "#20GG2PV9QL",
+      "name": "Enzo",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-14T14:20:24Z",
+      "type": "left",
+      "tag": "#UY9Y29RY0",
+      "name": "Luppen2005",
+      "role": "member"
+    },
+    {
       "date": "2026-11-13T23:42:57Z",
       "type": "joined",
       "tag": "#UPPVQ2RJV",

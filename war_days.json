@@ -322,7 +322,7 @@
       }
     },
     "2": {
-      "updated": "2026-11-13T23:42:57Z",
+      "updated": "2026-11-14T06:46:11Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -444,16 +444,6 @@
           "base": 0,
           "decks": 4
         },
-        "#GYJVQYR": {
-          "name": "Adam",
-          "base": 4,
-          "decks": 0
-        },
-        "#VCYPG98JG": {
-          "name": "OGDUNEDAN",
-          "base": 4,
-          "decks": 0
-        },
         "#20CRLUGCP9": {
           "name": "BjalkenX",
           "base": 4,
@@ -461,16 +451,6 @@
         },
         "#U2YJV2R2G": {
           "name": "Hejhadi1",
-          "base": 4,
-          "decks": 0
-        },
-        "#URUQ09LVG": {
-          "name": "wisely",
-          "base": 4,
-          "decks": 0
-        },
-        "#YGPJ9PP9Y": {
-          "name": "kingmeng",
           "base": 4,
           "decks": 0
         },
@@ -499,16 +479,6 @@
           "base": 4,
           "decks": 0
         },
-        "#VJ9GP8UJ8": {
-          "name": "amj",
-          "base": 4,
-          "decks": 0
-        },
-        "#P0CV8LUY": {
-          "name": "Gideon",
-          "base": 4,
-          "decks": 0
-        },
         "#J2R9RRRG": {
           "name": "N3lson",
           "base": 4,
@@ -529,6 +499,11 @@
           "base": 4,
           "decks": 4
         },
+        "#VCYPG98JG": {
+          "name": "OGDUNEDAN",
+          "base": 4,
+          "decks": 4
+        },
         "#CJLPGJ2CY": {
           "name": "BRUNO",
           "base": 4,
@@ -541,6 +516,11 @@
         },
         "#UVJU8Q90V": {
           "name": "WilliR5",
+          "base": 4,
+          "decks": 4
+        },
+        "#GYJVQYR": {
+          "name": "Adam",
           "base": 4,
           "decks": 4
         },
@@ -574,10 +554,20 @@
           "base": 4,
           "decks": 4
         },
+        "#URUQ09LVG": {
+          "name": "wisely",
+          "base": 4,
+          "decks": 4
+        },
         "#PRVR9J9": {
           "name": "Limpan",
           "base": 4,
           "decks": 3
+        },
+        "#YGPJ9PP9Y": {
+          "name": "kingmeng",
+          "base": 4,
+          "decks": 4
         },
         "#8VV8GGGPY": {
           "name": "Leo",
@@ -586,6 +576,11 @@
         },
         "#8UPLQ90YQ": {
           "name": "Viggen\\\\",
+          "base": 4,
+          "decks": 4
+        },
+        "#VJ9GP8UJ8": {
+          "name": "amj",
           "base": 4,
           "decks": 4
         },
@@ -604,11 +599,6 @@
           "base": 4,
           "decks": 4
         },
-        "#CQCUPGGG": {
-          "name": "Bjögga",
-          "base": 4,
-          "decks": 3
-        },
         "#8CVLPV9YR": {
           "name": "Piggelin",
           "base": 4,
@@ -626,6 +616,11 @@
         },
         "#2QGGPPYCP": {
           "name": "herman@:com",
+          "base": 4,
+          "decks": 4
+        },
+        "#CQCUPGGG": {
+          "name": "Bjögga",
           "base": 4,
           "decks": 4
         },
@@ -651,6 +646,11 @@
         },
         "#RUV8V8GVR": {
           "name": "MEGABAENIS",
+          "base": 4,
+          "decks": 4
+        },
+        "#P0CV8LUY": {
+          "name": "Gideon",
           "base": 4,
           "decks": 4
         }

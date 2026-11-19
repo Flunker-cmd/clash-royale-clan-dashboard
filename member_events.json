@@ -2,6 +2,27 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-19T13:33:47Z",
+      "type": "joined",
+      "tag": "#P8LGPV0P",
+      "name": "oscar",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-19T13:33:47Z",
+      "type": "joined",
+      "tag": "#UGCCPLP0R",
+      "name": "yhgh",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-19T13:33:47Z",
+      "type": "left",
+      "tag": "#200R8V98CP",
+      "name": "Alan",
+      "role": "member"
+    },
+    {
       "date": "2026-11-17T23:00:11Z",
       "type": "left",
       "tag": "#CVGCRRCR2",

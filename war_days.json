@@ -2,7 +2,7 @@
   "warKey": "2:17",
   "days": {
     "1": {
-      "updated": "2026-11-19T22:18:05Z",
+      "updated": "2026-11-20T03:34:16Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -26,21 +26,6 @@
         },
         "#UY9Y29RY0": {
           "name": "Luppen2005",
-          "base": 0,
-          "decks": 0
-        },
-        "#PRVR9J9": {
-          "name": "Limpan",
-          "base": 0,
-          "decks": 0
-        },
-        "#GYJVQYR": {
-          "name": "Adam",
-          "base": 0,
-          "decks": 0
-        },
-        "#VCYPG98JG": {
-          "name": "OGDUNEDAN",
           "base": 0,
           "decks": 0
         },
@@ -119,11 +104,6 @@
           "base": 0,
           "decks": 0
         },
-        "#YVULVLJRC": {
-          "name": "Greenhair888",
-          "base": -2,
-          "decks": 2
-        },
         "#CJLPGJ2CY": {
           "name": "BRUNO",
           "base": 0,
@@ -161,11 +141,6 @@
         },
         "#8QRCG902Y": {
           "name": "3opåd",
-          "base": 0,
-          "decks": 0
-        },
-        "#VGPYCR0JG": {
-          "name": "Rasse08;)",
           "base": 0,
           "decks": 0
         },
@@ -274,13 +249,23 @@
           "base": 0,
           "decks": 4
         },
-        "#8UPLQ90YQ": {
-          "name": "Viggen\\\\",
-          "base": 0,
-          "decks": 2
-        },
         "#2QL8VQRUP": {
           "name": "The Viking",
+          "base": 0,
+          "decks": 4
+        },
+        "#PRVR9J9": {
+          "name": "Limpan",
+          "base": 0,
+          "decks": 3
+        },
+        "#CUUUYP0LG": {
+          "name": "561an",
+          "base": 0,
+          "decks": 3
+        },
+        "#VGPYCR0JG": {
+          "name": "Rasse08;)",
           "base": 0,
           "decks": 4
         },
@@ -301,6 +286,16 @@
         },
         "#GYPPYQ8YG": {
           "name": "duck",
+          "base": 0,
+          "decks": 4
+        },
+        "#GYJVQYR": {
+          "name": "Adam",
+          "base": 0,
+          "decks": 4
+        },
+        "#VCYPG98JG": {
+          "name": "OGDUNEDAN",
           "base": 0,
           "decks": 4
         },
@@ -331,6 +326,16 @@
         },
         "#CC0JPP0UL": {
           "name": "slinky",
+          "base": 0,
+          "decks": 4
+        },
+        "#YVULVLJRC": {
+          "name": "Greenhair888",
+          "base": 0,
+          "decks": 4
+        },
+        "#8UPLQ90YQ": {
+          "name": "Viggen\\\\",
           "base": 0,
           "decks": 4
         },

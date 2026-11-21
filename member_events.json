@@ -2,6 +2,35 @@
   "trackingSince": "2026-09-19T15:58:31Z",
   "events": [
     {
+      "date": "2026-11-21T11:27:29Z",
+      "type": "demoted",
+      "tag": "#UCCL9GC9R",
+      "name": "Das Meer",
+      "from": "elder",
+      "to": "member"
+    },
+    {
+      "date": "2026-11-21T11:27:29Z",
+      "type": "left",
+      "tag": "#20929PYR0",
+      "name": "Reavy",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-21T11:27:29Z",
+      "type": "left",
+      "tag": "#YGPJ9PP9Y",
+      "name": "kingmeng",
+      "role": "member"
+    },
+    {
+      "date": "2026-11-21T11:27:29Z",
+      "type": "left",
+      "tag": "#UGCCPLP0R",
+      "name": "yhgh",
+      "role": "member"
+    },
+    {
       "date": "2026-11-20T13:15:22Z",
       "type": "joined",
       "tag": "#G99P2L8LC",

@@ -1,4 +1,40 @@
 {
+  "#8UPLQ90YQ": {
+    "name": "Viggen\\\\",
+    "role": "elder"
+  },
+  "#QJ920VG2C": {
+    "name": "isak",
+    "role": "member"
+  },
+  "#G0JQ08299": {
+    "name": "Tren 9",
+    "role": "elder"
+  },
+  "#UVJU8Q90V": {
+    "name": "WilliR5",
+    "role": "elder"
+  },
+  "#P0CV8LUY": {
+    "name": "Gideon",
+    "role": "elder"
+  },
+  "#98YUVC8": {
+    "name": "Oskar :)",
+    "role": "elder"
+  },
+  "#PPUUULVU2": {
+    "name": "Julia",
+    "role": "elder"
+  },
+  "#CJLPGJ2CY": {
+    "name": "BRUNO",
+    "role": "elder"
+  },
+  "#VGPYCR0JG": {
+    "name": "Rasse08;)",
+    "role": "member"
+  },
   "#2L8V08QLL": {
     "name": "Bossebus123",
     "role": "member"
@@ -10,18 +46,6 @@
   "#2QGGPPYCP": {
     "name": "herman@:com",
     "role": "elder"
-  },
-  "#CJLPGJ2CY": {
-    "name": "BRUNO",
-    "role": "elder"
-  },
-  "#G0JQ08299": {
-    "name": "Tren 9",
-    "role": "elder"
-  },
-  "#VGPYCR0JG": {
-    "name": "Rasse08;)",
-    "role": "member"
   },
   "#CQCUPGGG": {
     "name": "Bjögga",
@@ -35,30 +59,6 @@
     "name": "Hejhadi1",
     "role": "member"
   },
-  "#UVJU8Q90V": {
-    "name": "WilliR5",
-    "role": "elder"
-  },
-  "#PPUUULVU2": {
-    "name": "Julia",
-    "role": "elder"
-  },
-  "#98YUVC8": {
-    "name": "Oskar :)",
-    "role": "elder"
-  },
-  "#QJ920VG2C": {
-    "name": "isak",
-    "role": "member"
-  },
-  "#8UPLQ90YQ": {
-    "name": "Viggen\\\\",
-    "role": "elder"
-  },
-  "#P0CV8LUY": {
-    "name": "Gideon",
-    "role": "elder"
-  },
   "#CVYL9CR92": {
     "name": "A19",
     "role": "elder"
@@ -67,12 +67,12 @@
     "name": "Limpan",
     "role": "elder"
   },
-  "#VJ9GP8UJ8": {
-    "name": "amj",
-    "role": "elder"
-  },
   "#8CVLPV9YR": {
     "name": "Piggelin",
+    "role": "elder"
+  },
+  "#VJ9GP8UJ8": {
+    "name": "amj",
     "role": "elder"
   },
   "#20VYLRPCYG": {
@@ -101,6 +101,10 @@
   },
   "#UCCL9GC9R": {
     "name": "Das Meer",
+    "role": "member"
+  },
+  "#CPCLGY0R": {
+    "name": "AMAMAMAMEOJ",
     "role": "member"
   },
   "#2G9PV0LQ0": {
@@ -135,6 +139,10 @@
     "name": "DonaldDuck69",
     "role": "member"
   },
+  "#VLYCQG8JQ": {
+    "name": "hydra",
+    "role": "member"
+  },
   "#2QL8VQRUP": {
     "name": "The Viking",
     "role": "member"
@@ -142,10 +150,6 @@
   "#J2R9RRRG": {
     "name": "N3lson",
     "role": "leader"
-  },
-  "#VLYCQG8JQ": {
-    "name": "hydra",
-    "role": "member"
   },
   "#20U2C9QLGG": {
     "name": "Wader",

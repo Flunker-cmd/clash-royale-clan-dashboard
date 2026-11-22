@@ -802,7 +802,7 @@
       }
     },
     "3": {
-      "updated": "2026-11-21T19:31:13Z",
+      "updated": "2026-11-22T00:29:46Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -1007,7 +1007,7 @@
         "#2L8V08QLL": {
           "name": "Bossebus123",
           "base": 6,
-          "decks": 0
+          "decks": 1
         },
         "#ULQLUL9CC": {
           "name": "Arvid",
@@ -1019,20 +1019,10 @@
           "base": 6,
           "decks": 2
         },
-        "#URUQ09LVG": {
-          "name": "wisely",
-          "base": 8,
-          "decks": 0
-        },
         "#CJLPGJ2CY": {
           "name": "BRUNO",
           "base": 4,
           "decks": 4
-        },
-        "#VGPYCR0JG": {
-          "name": "Rasse08;)",
-          "base": 4,
-          "decks": 3
         },
         "#8UPLQ90YQ": {
           "name": "Viggen\\\\",
@@ -1059,6 +1049,11 @@
           "base": 8,
           "decks": 0
         },
+        "#VGPYCR0JG": {
+          "name": "Rasse08;)",
+          "base": 4,
+          "decks": 4
+        },
         "#UUGUL0JJR": {
           "name": "Padlarn",
           "base": 4,
@@ -1067,11 +1062,6 @@
         "#2QL8VQRUP": {
           "name": "The Viking",
           "base": 8,
-          "decks": 2
-        },
-        "#PRVR9J9": {
-          "name": "Limpan",
-          "base": 7,
           "decks": 2
         },
         "#20CRLUGCP9": {
@@ -1098,6 +1088,16 @@
           "name": "Piggelin",
           "base": 8,
           "decks": 0
+        },
+        "#PRVR9J9": {
+          "name": "Limpan",
+          "base": 7,
+          "decks": 4
+        },
+        "#URUQ09LVG": {
+          "name": "wisely",
+          "base": 8,
+          "decks": 3
         },
         "#98YUVC8": {
           "name": "Oskar :)",

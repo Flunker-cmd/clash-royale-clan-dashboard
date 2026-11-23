@@ -1202,7 +1202,7 @@
       }
     },
     "4": {
-      "updated": "2026-11-22T22:35:44Z",
+      "updated": "2026-11-23T03:49:15Z",
       "players": {
         "#PG9VYL0PG": {
           "name": "jojo",
@@ -1427,7 +1427,7 @@
         "#QJ920VG2C": {
           "name": "isak",
           "base": 10,
-          "decks": 1
+          "decks": 2
         },
         "#8UC8L0PY0": {
           "name": "DonaldDuck69",
@@ -1469,11 +1469,6 @@
           "base": 10,
           "decks": 4
         },
-        "#V882JC088": {
-          "name": "Teddaren",
-          "base": 12,
-          "decks": 0
-        },
         "#P0CV8LUY": {
           "name": "Gideon",
           "base": 11,
@@ -1483,11 +1478,6 @@
           "name": "Julia",
           "base": 8,
           "decks": 4
-        },
-        "#GYJVQYR": {
-          "name": "Adam",
-          "base": 12,
-          "decks": 2
         },
         "#YPCURPPY2": {
           "name": "BullyMeILLc|_|M",
@@ -1501,6 +1491,11 @@
         },
         "#98YUVC8": {
           "name": "Oskar :)",
+          "base": 12,
+          "decks": 4
+        },
+        "#GYJVQYR": {
+          "name": "Adam",
           "base": 12,
           "decks": 4
         },
@@ -1561,6 +1556,11 @@
         },
         "#UVJU8Q90V": {
           "name": "WilliR5",
+          "base": 12,
+          "decks": 4
+        },
+        "#V882JC088": {
+          "name": "Teddaren",
           "base": 12,
           "decks": 4
         },

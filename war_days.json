@@ -1417,7 +1417,7 @@
         "#2L8V08QLL": {
           "name": "Bossebus123",
           "base": 7,
-          "decks": 2
+          "decks": 4
         },
         "#ULQLUL9CC": {
           "name": "Arvid",
@@ -1427,7 +1427,7 @@
         "#QJ920VG2C": {
           "name": "isak",
           "base": 10,
-          "decks": 2
+          "decks": 4
         },
         "#8UC8L0PY0": {
           "name": "DonaldDuck69",
@@ -1457,12 +1457,12 @@
         "#8UPLQ90YQ": {
           "name": "Viggen\\\\",
           "base": 12,
-          "decks": 0
+          "decks": 4
         },
         "#2JC8C9VVP": {
           "name": "iron m",
           "base": 12,
-          "decks": 0
+          "decks": 4
         },
         "#J2R9RRRG": {
           "name": "N3lson",
@@ -1472,7 +1472,7 @@
         "#P0CV8LUY": {
           "name": "Gideon",
           "base": 11,
-          "decks": 0
+          "decks": 4
         },
         "#PPUUULVU2": {
           "name": "Julia",
@@ -1532,7 +1532,7 @@
         "#CQCUPGGG": {
           "name": "Bjögga",
           "base": 12,
-          "decks": 3
+          "decks": 4
         },
         "#PPJPY09GP": {
           "name": "BjalkenGG",
@@ -1611,5 +1611,7 @@
         }
       }
     }
-  }
+  },
+  "finished": true,
+  "seasonId": 138
 }

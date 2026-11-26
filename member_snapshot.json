@@ -1,50 +1,34 @@
 {
-  "#98YUVC8": {
-    "name": "Oskar :)",
-    "role": "elder"
-  },
-  "#2L8V08QLL": {
-    "name": "Bossebus123",
-    "role": "member"
-  },
-  "#8VV8GGGPY": {
-    "name": "Leo",
-    "role": "elder"
-  },
-  "#QJ920VG2C": {
-    "name": "isak",
-    "role": "member"
-  },
-  "#G0JQ08299": {
-    "name": "Tren 9",
-    "role": "elder"
-  },
-  "#CQCUPGGG": {
-    "name": "Bjögga",
-    "role": "elder"
-  },
-  "#P0CV8LUY": {
-    "name": "Gideon",
-    "role": "elder"
-  },
   "#UVJU8Q90V": {
     "name": "WilliR5",
+    "role": "elder"
+  },
+  "#CJLPGJ2CY": {
+    "name": "BRUNO",
     "role": "elder"
   },
   "#PPUUULVU2": {
     "name": "Julia",
     "role": "elder"
   },
-  "#RUV8V8GVR": {
-    "name": "MEGABAENIS",
+  "#P0CV8LUY": {
+    "name": "Gideon",
     "role": "elder"
   },
-  "#VGPYCR0JG": {
-    "name": "Rasse08;)",
+  "#G0JQ08299": {
+    "name": "Tren 9",
+    "role": "elder"
+  },
+  "#8VV8GGGPY": {
+    "name": "Leo",
+    "role": "elder"
+  },
+  "#2L8V08QLL": {
+    "name": "Bossebus123",
     "role": "member"
   },
-  "#CJLPGJ2CY": {
-    "name": "BRUNO",
+  "#RUV8V8GVR": {
+    "name": "MEGABAENIS",
     "role": "elder"
   },
   "#U2YJV2R2G": {
@@ -55,16 +39,32 @@
     "name": "Viggen\\\\",
     "role": "elder"
   },
+  "#VGPYCR0JG": {
+    "name": "Rasse08;)",
+    "role": "member"
+  },
+  "#QJ920VG2C": {
+    "name": "isak",
+    "role": "member"
+  },
+  "#98YUVC8": {
+    "name": "Oskar :)",
+    "role": "elder"
+  },
+  "#CQCUPGGG": {
+    "name": "Bjögga",
+    "role": "elder"
+  },
   "#2QGGPPYCP": {
     "name": "herman@:com",
     "role": "elder"
   },
-  "#PRVR9J9": {
-    "name": "Limpan",
-    "role": "elder"
-  },
   "#CVYL9CR92": {
     "name": "A19",
+    "role": "elder"
+  },
+  "#PRVR9J9": {
+    "name": "Limpan",
     "role": "elder"
   },
   "#8CVLPV9YR": {
@@ -95,12 +95,12 @@
     "name": "wisely",
     "role": "coLeader"
   },
-  "#V882JC088": {
-    "name": "Teddaren",
-    "role": "elder"
-  },
   "#2G9PV0LQ0": {
     "name": "Thabet",
+    "role": "elder"
+  },
+  "#V882JC088": {
+    "name": "Teddaren",
     "role": "elder"
   },
   "#UUGUL0JJR": {
@@ -139,6 +139,10 @@
     "name": "N3lson",
     "role": "leader"
   },
+  "#20LJ88G2YJ": {
+    "name": "timmy",
+    "role": "member"
+  },
   "#20U2C9QLGG": {
     "name": "Wader",
     "role": "elder"
@@ -147,13 +151,13 @@
     "name": "REKTM8",
     "role": "member"
   },
-  "#GYJVQYR": {
-    "name": "Adam",
-    "role": "elder"
-  },
   "#8UP8YP08U": {
     "name": "Schebbe",
     "role": "member"
+  },
+  "#GYJVQYR": {
+    "name": "Adam",
+    "role": "elder"
   },
   "#CC0JPP0UL": {
     "name": "slinky",

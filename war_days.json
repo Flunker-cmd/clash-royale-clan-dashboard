@@ -2,7 +2,7 @@
   "warKey": "3:24",
   "days": {
     "1": {
-      "updated": "2026-11-26T22:26:59Z",
+      "updated": "2026-11-27T05:10:09Z",
       "players": {
         "#9RCR2QQQJ": {
           "name": "Zer0",
@@ -54,16 +54,6 @@
           "base": 0,
           "decks": 0
         },
-        "#GYJVQYR": {
-          "name": "Adam",
-          "base": 0,
-          "decks": 0
-        },
-        "#UYPQ2JU": {
-          "name": "THE KING 37",
-          "base": 0,
-          "decks": 0
-        },
         "#UPPVQ2RJV": {
           "name": "1.william45",
           "base": 0,
@@ -91,11 +81,6 @@
         },
         "#29YR2U0VP": {
           "name": "RONALD + RONALD",
-          "base": 0,
-          "decks": 0
-        },
-        "#2G9PV0LQ0": {
-          "name": "Thabet",
           "base": 0,
           "decks": 0
         },
@@ -151,11 +136,6 @@
         },
         "#2QGGPPYCP": {
           "name": "herman@:com",
-          "base": 0,
-          "decks": 0
-        },
-        "#J0JC0L0CR": {
-          "name": "chost_man10",
           "base": 0,
           "decks": 0
         },
@@ -259,11 +239,6 @@
           "base": 0,
           "decks": 0
         },
-        "#J2R9RRRG": {
-          "name": "N3lson",
-          "base": 0,
-          "decks": 0
-        },
         "#8CVLPV9YR": {
           "name": "Piggelin",
           "base": 0,
@@ -301,6 +276,11 @@
         },
         "#8UP8YP08U": {
           "name": "Schebbe",
+          "base": 0,
+          "decks": 1
+        },
+        "#UYPQ2JU": {
+          "name": "THE KING 37",
           "base": 0,
           "decks": 1
         },
@@ -354,6 +334,16 @@
           "base": 0,
           "decks": 3
         },
+        "#J0JC0L0CR": {
+          "name": "chost_man10",
+          "base": 0,
+          "decks": 3
+        },
+        "#J2R9RRRG": {
+          "name": "N3lson",
+          "base": 0,
+          "decks": 4
+        },
         "#98YUVC8": {
           "name": "Oskar :)",
           "base": 0,
@@ -389,10 +379,10 @@
           "base": 0,
           "decks": 4
         },
-        "#V882JC088": {
-          "name": "Teddaren",
+        "#GYJVQYR": {
+          "name": "Adam",
           "base": 0,
-          "decks": 3
+          "decks": 4
         },
         "#VGPYCR0JG": {
           "name": "Rasse08;)",
@@ -414,6 +404,11 @@
           "base": 0,
           "decks": 4
         },
+        "#2G9PV0LQ0": {
+          "name": "Thabet",
+          "base": 0,
+          "decks": 4
+        },
         "#PPJPY09GP": {
           "name": "BjalkenGG",
           "base": 0,
@@ -426,6 +421,11 @@
         },
         "#G0JQ08299": {
           "name": "Tren 9",
+          "base": 0,
+          "decks": 4
+        },
+        "#V882JC088": {
+          "name": "Teddaren",
           "base": 0,
           "decks": 4
         },

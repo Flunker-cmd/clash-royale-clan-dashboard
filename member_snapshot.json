@@ -1,12 +1,4 @@
 {
-  "#CQCUPGGG": {
-    "name": "Bjögga",
-    "role": "elder"
-  },
-  "#VGPYCR0JG": {
-    "name": "Rasse08;)",
-    "role": "member"
-  },
   "#8UPLQ90YQ": {
     "name": "Viggen\\\\",
     "role": "elder"
@@ -15,41 +7,49 @@
     "name": "Leo",
     "role": "elder"
   },
-  "#98YUVC8": {
-    "name": "Oskar :)",
-    "role": "elder"
-  },
-  "#QJ920VG2C": {
-    "name": "isak",
-    "role": "member"
-  },
-  "#CJLPGJ2CY": {
-    "name": "BRUNO",
-    "role": "elder"
-  },
-  "#U2YJV2R2G": {
-    "name": "Hejhadi1",
-    "role": "member"
-  },
-  "#2L8V08QLL": {
-    "name": "Bossebus123",
-    "role": "member"
-  },
   "#P0CV8LUY": {
     "name": "Gideon",
-    "role": "elder"
-  },
-  "#G0JQ08299": {
-    "name": "Tren 9",
     "role": "elder"
   },
   "#PPUUULVU2": {
     "name": "Julia",
     "role": "elder"
   },
+  "#U2YJV2R2G": {
+    "name": "Hejhadi1",
+    "role": "member"
+  },
+  "#CJLPGJ2CY": {
+    "name": "BRUNO",
+    "role": "elder"
+  },
+  "#VGPYCR0JG": {
+    "name": "Rasse08;)",
+    "role": "member"
+  },
+  "#QJ920VG2C": {
+    "name": "isak",
+    "role": "member"
+  },
+  "#CQCUPGGG": {
+    "name": "Bjögga",
+    "role": "elder"
+  },
   "#UVJU8Q90V": {
     "name": "WilliR5",
     "role": "elder"
+  },
+  "#G0JQ08299": {
+    "name": "Tren 9",
+    "role": "elder"
+  },
+  "#98YUVC8": {
+    "name": "Oskar :)",
+    "role": "elder"
+  },
+  "#2L8V08QLL": {
+    "name": "Bossebus123",
+    "role": "member"
   },
   "#RUV8V8GVR": {
     "name": "MEGABAENIS",
@@ -63,21 +63,21 @@
     "name": "Limpan",
     "role": "elder"
   },
-  "#VJ9GP8UJ8": {
-    "name": "amj",
-    "role": "elder"
-  },
   "#U8LR88P0U": {
     "name": "sloppyking",
     "role": "member"
   },
-  "#8CVLPV9YR": {
-    "name": "Piggelin",
+  "#VJ9GP8UJ8": {
+    "name": "amj",
     "role": "elder"
   },
   "#20VYLRPCYG": {
     "name": "OG27",
     "role": "coLeader"
+  },
+  "#8CVLPV9YR": {
+    "name": "Piggelin",
+    "role": "elder"
   },
   "#8LUY80VVG": {
     "name": "fritzl",
@@ -151,12 +151,12 @@
     "name": "slinky",
     "role": "elder"
   },
-  "#UYPQ2JU": {
-    "name": "THE KING 37",
+  "#CQY0VQULU": {
+    "name": "Amin",
     "role": "member"
   },
-  "#ULQLUL9CC": {
-    "name": "Arvid",
+  "#UYPQ2JU": {
+    "name": "THE KING 37",
     "role": "member"
   },
   "#VCYPG98JG": {
